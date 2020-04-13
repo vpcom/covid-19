@@ -8,11 +8,13 @@ import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { CasesDeathsComponent } from './cases-deaths/cases-deaths.component';
 import { HttpClientModule } from '@angular/common/http';
+import { IntroComponent } from './intro/intro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CasesDeathsComponent
+    CasesDeathsComponent,
+    IntroComponent
   ],
   imports: [
     BrowserModule,
