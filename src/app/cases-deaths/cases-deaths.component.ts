@@ -1,8 +1,8 @@
 
-import {Component, OnInit, ViewChild} from '@angular/core';
-import {MatSort} from '@angular/material/sort';
-import {MatTableDataSource} from '@angular/material/table';
-import { CovidService } from '../covid.service';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatSort } from '@angular/material/sort';
+import { MatTableDataSource } from '@angular/material/table';
+import { CovidService } from '../services/covid.service';
 import { forkJoin, Observable } from 'rxjs';
 
 @Component({
@@ -31,19 +31,20 @@ export class CasesDeathsComponent implements OnInit {
     forkJoin(this.populations$, this.deaths$).subscribe(([population, deaths]) => {
 
       console.log(population);
-      console.log(deaths.locations);
-      deaths.locations.find(country => {
+      console.log(deaths);
+
+      // TODO convertions in the service
+      deaths.find(country => {
         if (country.country === 'US') {
           country.country = 'United States';
         }
       })
 
-      const merge = this.mergeArrayObjects(population, deaths.locations);
+      const merge = this.mergeArrayObjects(population, deaths);
       console.log(merge);
 
-    this.dataSource = new MatTableDataSource(merge);
-    this.dataSource.sort = this.sort;
-
+      this.dataSource = new MatTableDataSource(merge);
+      this.dataSource.sort = this.sort;
     });
   }
 
@@ -61,15 +62,9 @@ export class CasesDeathsComponent implements OnInit {
         }
       }
       else {
+        // TODO get all countries within the list, but in service
         console.log(popStat.country);
       }
     }).filter(data => typeof data !== 'undefined');
   }
-}
-
-export interface countryStat {
-  name: string;
-  population: number;
-  deaths: number;
-  deathsRatio: number;
 }
