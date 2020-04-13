@@ -1,0 +1,26 @@
+
+<table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Country name </th>
+    <td mat-cell *matCellDef="let country"> {{country.name}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="population">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Population </th>
+    <td mat-cell *matCellDef="let country"> {{country.population}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="deaths">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Deaths </th>
+    <td mat-cell *matCellDef="let country"> {{country.deaths}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="deathsRatio">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Death ratio per 100'000 inhabitants </th>
+    <td mat-cell *matCellDef="let country"> {{country.deathsRatio}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
