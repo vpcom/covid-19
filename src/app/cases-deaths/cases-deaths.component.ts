@@ -2,7 +2,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { CovidService } from '../services/covid.service';
+import { MainService } from '../services/main/main.service';
 import { forkJoin, Observable } from 'rxjs';
 
 @Component({
@@ -12,7 +12,7 @@ import { forkJoin, Observable } from 'rxjs';
 })
 export class CasesDeathsComponent implements OnInit {
 
-  constructor(private covidService: CovidService) { }
+  constructor(private mainService: MainService) { }
 
   displayedColumns: string[] = ['name', 'population', 'deaths', 'deathsRatio'];
 
@@ -25,8 +25,8 @@ export class CasesDeathsComponent implements OnInit {
 
   ngOnInit() {
 
-    this.populations$ = this.covidService.getPopulations();
-    this.deaths$ = this.covidService.getDeaths();
+    this.populations$ = this.mainService.getPopulations();
+    this.deaths$ = this.mainService.getDeaths();
 
     forkJoin(this.populations$, this.deaths$).subscribe(([population, deaths]) => {
 
