@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import { map, tap, switchMap } from 'rxjs/operators';
+import { map, tap, switchMap, catchError } from 'rxjs/operators';
 import { JhuDataObject, JhuData } from '../jhu/jhu.d';
 
 
@@ -25,9 +25,9 @@ export class JhuService {
 
   covid19apiEndPoint = 'https://covid19api.herokuapp.com/';
 
-  cachedDeaths: JhuData[];
-  cachedRecovered: JhuData[];
-  cachedConfirmed: JhuData[];
+  cachedDeaths: JhuDataObject;
+  cachedRecovered: JhuDataObject;
+  cachedConfirmed: JhuDataObject;
 
 
   repetedCountries = ['Australia', 'Canada', 'China', 'France', 'Denmark', 'France', 'Netherlands', 'United Kingdom', 'US'];
@@ -35,41 +35,43 @@ export class JhuService {
 
   constructor(private http: HttpClient) { }
 
-  public getDeaths(): Observable<any> {
-    console.log('getDeaths');
+  public getDeaths(): Observable<JhuDataObject> {
+    // console.log('getDeaths');
     return this.getCachedDeaths().pipe(
-      tap(data => { console.log(data) }),
-      map((cachedData: JhuData[]) => {
+      // tap(data => { console.log(data) }),
+      map((cachedData: JhuDataObject) => {
         if (typeof cachedData !== 'undefined') {
           return of(cachedData);
         }
       }),
-	    switchMap(selectedItems => this.getDeathFromEndpoint())
+	    switchMap(selectedItems => {
+        return this.getDeathFromEndpoint()
+      })
     );
   }
 
-  private getCachedDeaths(): Observable<JhuData[]> {
+  private getCachedDeaths(): Observable<JhuDataObject> {
     return of(this.cachedDeaths);
   }
 
   /**
-   * TODO manage well the data here because the list include
-   * repetitvie entries and specific naming and special places or territories.
+   * 
    */
-  private getDeathFromEndpoint(): Observable<JhuData[]> {
+  private getDeathFromEndpoint(): Observable<JhuDataObject> {
     console.log('getDeathFromEndpoint');
     return this.http.get(this.covid19apiEndPoint + 'deaths').pipe(
       tap(data => { console.log(data) }),
-      map((data: JhuDataObject) => {
-        return data.locations;
+      catchError(err => {
+        console.log('Error from endpoint: ', err);
+        return of(err);
       })
     );
   }
-// make an ignorant service
-  improveCountryData(): Observable<any> {
-    console.log('improveCountryData');
-    return of();
-  }
 
+// make an ignorant service
+  // improveCountryData(): Observable<any> {
+  //   console.log('improveCountryData');
+  //   return of();
+  // }
 
 }

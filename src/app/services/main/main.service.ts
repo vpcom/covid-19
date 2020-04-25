@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { JhuService } from '../jhu/jhu.service';
 import { CountryService } from '../country/country.service';
 import { JhuDataObject } from '../jhu/jhu';
 import { CountryData } from './main';
+import { CovidService } from '../covid/covid.service';
+import { Country } from '../country/country';
 
 @Injectable({
   providedIn: 'root'
@@ -11,27 +12,17 @@ import { CountryData } from './main';
 export class MainService {
 
   constructor(
-    private jhuService: JhuService,
-    private populationDataService: CountryService ) { }
+    private covidService: CovidService,
+    private countryService: CountryService ) { }
 
-    public getPopulations(): Observable<any> {
-      return this.populationDataService.getPopulations();
+    public getCountries(): Observable<Country[]> {
+      return this.countryService.getCountries();
     }
   
-    public getDeaths(): Observable<any> {
-      return this.jhuService.getDeaths();
+    public getDeaths(countries: Country[]): Observable<any> {
+      return this.covidService.getDeaths(countries);
     }
 
-    improveCountryData(): Observable<any> {
-      return this.jhuService.improveCountryData();
-    }
-
-
-
-  // TODO
-  // getPopulation(countryName: string): Observable<any> {
-  //   return this.http.get();
-  // }
 
   convertCountryData(data: any): CountryData[] {
 
@@ -44,17 +35,6 @@ export class MainService {
         coordinates: undefined
       }
     });
-    // test.append
-    // {
-    //   countryCode: 'string',
-    //   population: 0,
-    //   confirmed: 0,
-    //   deaths: 0,
-    //   recovered: 0,
-    //   confirmedRatio: 0,
-    //   deathsRatio: 0,
-    //   recoveredRatio: 0,
-    // }
 
     return test;
 
@@ -81,7 +61,6 @@ export class MainService {
         coordinates: undefined
       }
     });
-    // test.append
 
     return test;
 

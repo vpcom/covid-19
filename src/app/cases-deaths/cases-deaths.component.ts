@@ -24,9 +24,10 @@ export class CasesDeathsComponent implements OnInit {
   @ViewChild(MatSort, {static: true}) sort: MatSort;
 
   ngOnInit() {
+    // this.craftMyData();
 
-    this.populations$ = this.mainService.getPopulations();
-    this.deaths$ = this.mainService.getDeaths();
+    this.populations$ = this.mainService.getCountries();
+    this.deaths$ = this.mainService.getDeaths(null);
 
     forkJoin(this.populations$, this.deaths$).subscribe(([population, deaths]) => {
 
@@ -63,8 +64,54 @@ export class CasesDeathsComponent implements OnInit {
       }
       else {
         // TODO get all countries within the list, but in service
-        console.log(popStat.country);
+        // console.log(popStat.country);
       }
     }).filter(data => typeof data !== 'undefined');
   }
+
+
+  /**
+   * Only for development, this methode is used to merged daata sources
+   * and create new JSON data.
+   */
+  craftMyData() {
+    this.populations$ = this.mainService.getCountries();
+    this.deaths$ = this.mainService.getDeaths(null);
+
+    forkJoin(this.populations$, this.deaths$).subscribe(([population, deaths]) => {
+
+      console.log(population);
+      console.log(deaths);
+
+      // TODO convertions in the service
+      deaths.find(country => {
+        if (country.country === 'US') {
+          country.country = 'United States';
+        }
+      })
+
+      console.log(population);
+      const testJson = [];
+      population.forEach(popStat => {
+
+        const matchingCountry = deaths.filter(deathsArray => deathsArray.country === popStat.country);
+
+        // console.log(matchingCountry);
+        if (matchingCountry[0]) {
+          testJson.push({
+            countryCoude: matchingCountry[0].country_code,
+            name: matchingCountry[0].country,
+            population: popStat.population,
+            coordinates: matchingCountry[0].coordinates
+          });
+        }
+
+      });
+      console.log(testJson);
+
+      const obj = JSON.stringify(testJson);
+      console.log(obj);
+    });
+  }
+
 }

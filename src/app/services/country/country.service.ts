@@ -15,12 +15,11 @@ export class CountryService {
 
   constructor(private http: HttpClient) { }
 
-  public getPopulations(): Observable<any> {
+  public getCountries(): Observable<Country[]> {
     return this.http.get(this.populationData).pipe(
       tap(data => { console.log(data) }),
       map((data: Country[]) => {
         data.map(countryData => {
-          console.log(countryData);
           return countryData;
         });
         console.log(data);
