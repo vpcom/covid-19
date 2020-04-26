@@ -9,12 +9,14 @@ import { MatSortModule } from '@angular/material/sort';
 import { CasesDeathsComponent } from './cases-deaths/cases-deaths.component';
 import { HttpClientModule } from '@angular/common/http';
 import { IntroComponent } from './intro/intro.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CasesDeathsComponent,
-    IntroComponent
+    IntroComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

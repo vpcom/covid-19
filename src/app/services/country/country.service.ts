@@ -3,15 +3,13 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
 import { Country } from '../country/country.d';
-import { JhuDataObject } from '../jhu/jhu';
-import { CountryData } from '../main/main';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CountryService {
 
-  populationData = '/assets/data/population.json';
+  populationData = '/assets/data/countries.json';
 
   constructor(private http: HttpClient) { }
 

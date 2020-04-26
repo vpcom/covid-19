@@ -22,7 +22,4 @@ export interface JhuData {
   province: string;
 }
 
-export interface Coordinates {
-  latitude: string;
-  longitude: string;
-}
+

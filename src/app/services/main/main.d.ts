@@ -16,3 +16,8 @@ export interface CovidData {
   deathsRatio: number;
   recoveredRatio: number;
 }
+
+export interface Coordinates {
+  latitude: string;
+  longitude: string;
+}
