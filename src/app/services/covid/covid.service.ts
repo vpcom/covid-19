@@ -24,11 +24,10 @@ export class CovidService {
     return this.jhuService.getDeaths().pipe(
       tap(data => { console.log(data) }),
       map((data: JhuDataObject) => {
-
-        // console.log('getDeaths', countries, data.locations);
+        // console.log('getDeaths', data);
 
         const merge = this.mergeArrayObjects(countries, data.locations);
-        console.log(merge);
+        // console.log(merge);
 
         return merge;
       })

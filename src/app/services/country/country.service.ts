@@ -15,12 +15,12 @@ export class CountryService {
 
   public getCountries(): Observable<Country[]> {
     return this.http.get(this.populationData).pipe(
-      tap(data => { console.log(data) }),
+      // tap(data => { console.log(data) }),
       map((data: Country[]) => {
         data.map(countryData => {
           return countryData;
         });
-        console.log(data);
+        // console.log(data);
         return data;
       })
     );

@@ -36,16 +36,16 @@ export class JhuService {
   constructor(private http: HttpClient) { }
 
   public getDeaths(): Observable<JhuDataObject> {
-    // console.log('getDeaths');
     return this.getCachedDeaths().pipe(
-      // tap(data => { console.log(data) }),
       map((cachedData: JhuDataObject) => {
         if (typeof cachedData !== 'undefined') {
           return of(cachedData);
         }
       }),
-	    switchMap(selectedItems => {
-        return this.getDeathFromEndpoint()
+	    switchMap(cachedData => {
+        if (typeof cachedData === 'undefined') {
+          return this.getJhuDataFromEndpoint();
+        }
       })
     );
   }
@@ -55,23 +55,17 @@ export class JhuService {
   }
 
   /**
-   * 
+   * Getting brut data from end point.
    */
-  private getDeathFromEndpoint(): Observable<JhuDataObject> {
-    console.log('getDeathFromEndpoint');
+  private getJhuDataFromEndpoint(): Observable<JhuDataObject> {
+    // console.log('getJhuDataFromEndpoint');
     return this.http.get(this.covid19apiEndPoint + 'deaths').pipe(
-      tap(data => { console.log(data) }),
+      // tap(data => { console.log(data) }),
       catchError(err => {
-        console.log('Error from endpoint: ', err);
+        console.error('Error from endpoint: ', err);
         return of(err);
       })
     );
   }
-
-// make an ignorant service
-  // improveCountryData(): Observable<any> {
-  //   console.log('improveCountryData');
-  //   return of();
-  // }
 
 }
