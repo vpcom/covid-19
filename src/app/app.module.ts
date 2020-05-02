@@ -10,13 +10,15 @@ import { CovidTableComponent } from './covid-table/covid-table.component';
 import { HttpClientModule } from '@angular/common/http';
 import { IntroComponent } from './intro/intro.component';
 import { MainComponent } from './main/main.component';
+import { CovidGraphComponent } from './covid-graph/covid-graph.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CovidTableComponent,
     IntroComponent,
-    MainComponent
+    MainComponent,
+    CovidGraphComponent
   ],
   imports: [
     BrowserModule,
