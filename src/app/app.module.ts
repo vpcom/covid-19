@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
-import { CasesDeathsComponent } from './cases-deaths/cases-deaths.component';
+import { CovidTableComponent } from './covid-table/covid-table.component';
 import { HttpClientModule } from '@angular/common/http';
 import { IntroComponent } from './intro/intro.component';
 import { MainComponent } from './main/main.component';
@@ -14,7 +14,7 @@ import { MainComponent } from './main/main.component';
 @NgModule({
   declarations: [
     AppComponent,
-    CasesDeathsComponent,
+    CovidTableComponent,
     IntroComponent,
     MainComponent
   ],
