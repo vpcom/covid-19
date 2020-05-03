@@ -22,7 +22,7 @@ export class CovidService {
   public getDeaths(countries: Country[]): Observable<any> {
     // console.log('getDeaths', countries);
     return this.jhuService.getDeaths().pipe(
-      tap(data => { console.log(data) }),
+      // tap(data => { console.log(data) }),
       map((data: JhuDataObject) => {
         // console.log('getDeaths', data);
 
@@ -34,18 +34,43 @@ export class CovidService {
     )
   }
 
+  public getDeathsForGraph(countries: Country[], countryFilter: string): Observable<any> {
+    // console.log('getDeathsForGraph', countries, countryFilter);
+    return this.jhuService.getDeaths().pipe(
+      // tap(data => { console.log(data) }),
+      map((data: JhuDataObject) => {
+        // console.log('getDeathsForGraph', data);
+
+        const merge = data.locations.filter(x => x.country_code === countryFilter);
+        // console.log(merge);
+
+        const x = [];
+        const y = [];
+
+        if (merge.length === 1) {
+          Object.keys(merge[0].history).forEach(key => {
+            x.push(key);
+            y.push(merge[0].history[key]);
+        });
+        }
+
+        return {x: x, y: y};
+      })
+    )
+  }
+
 
 
   mergeArrayObjects(populationsArray, deathsArray){
     return populationsArray.map(popStat => {
       const matchingCountry = deathsArray.filter(deathsArray => deathsArray.country_code === popStat.countryCode)
-      // console.log(matchingCountry);
+     // console.log(matchingCountry);
       if (matchingCountry[0]) {
         return {
           name: matchingCountry[0].country,
           population: popStat.population,
-          deaths: matchingCountry[0].history['4/10/20'],
-          deathsRatio: Math.round(matchingCountry[0].history['4/10/20'] / popStat.population * 100000)
+          deaths: matchingCountry[0].history.latest,
+          deathsRatio: Math.round(matchingCountry[0].latest / popStat.population * 100000)
         }
       }
       else {
