@@ -1,3 +1,4 @@
+import { Covid19apiService } from './../covid19api/covid19api.service';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { CountryService } from '../country/country.service';
@@ -15,10 +16,15 @@ export class MainService {
 
   constructor(
     private covidService: CovidService,
-    private countryService: CountryService
+    private countryService: CountryService,
+    private covid19apiService: Covid19apiService
   ) { }
 
   public getCountries(): Observable<Country[]> {
+    return this.covid19apiService.getCountries();
+  }
+
+  public getCountries_old(): Observable<Country[]> {
     return this.countryService.getCountries();
   }
 

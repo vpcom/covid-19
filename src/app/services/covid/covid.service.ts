@@ -4,6 +4,7 @@ import { map, tap } from 'rxjs/operators';
 import { JhuDataObject } from '../jhu/jhu.d';
 import { JhuService } from '../jhu/jhu.service';
 import { Country } from '../country/country';
+import { CountryData } from '../main/main';
 
 @Injectable({
   providedIn: 'root'
@@ -41,17 +42,23 @@ export class CovidService {
       map((data: JhuDataObject) => {
         // console.log('getDeathsForGraph', data);
 
-        const merge = data.locations.filter(x => x.country_code === countryFilter);
-        // console.log(merge);
+        const countryData = data.locations.filter(x => x.country_code === countryFilter);
+        console.log(countryData);
 
         const x = [];
         const y = [];
 
-        if (merge.length === 1) {
-          Object.keys(merge[0].history).forEach(key => {
-            x.push(key);
-            y.push(merge[0].history[key]);
-        });
+        if (countryData.length === 1) {
+          console.log(countryData[0].history)
+          for(let i in countryData[0].history) {
+            console.log( i + " : " + countryData[0].history[i]);
+          }
+
+        //   Object.keys(countryData[0].history).forEach(key => {
+        //     console.log(key)
+        //     x.push(key);
+        //     y.push(countryData[0].history[key]);
+        // });
         }
 
         return {x: x, y: y};

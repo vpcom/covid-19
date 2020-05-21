@@ -31,11 +31,12 @@ export class CovidTableComponent implements OnInit {
     // this.craftMyData();
 
     
+    console.log(this.countries);
     this.mainService.getDeaths(this.countries)
       .pipe(take(1))
       .subscribe((deathsPerCountry: any[]) => {
 
-        // console.log(deathsPerCountry);
+        console.log(deathsPerCountry);
 
         this.dataSource = new MatTableDataSource(deathsPerCountry);
         this.dataSource.sort = this.sort;

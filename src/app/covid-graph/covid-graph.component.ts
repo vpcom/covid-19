@@ -81,7 +81,8 @@ export class CovidGraphComponent implements OnInit {
         };
 
         const config = {
-          displayModeBar: false
+          displayModeBar: false,
+          responsive: true
         }
 
         Plotly.newPlot(graph, data, layout, config);

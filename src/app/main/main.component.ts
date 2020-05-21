@@ -11,6 +11,8 @@ import { MainService } from '../services/main/main.service';
 export class MainComponent implements OnInit {
 
   countries$: Observable<Country[]>;
+  xData$: Observable<any[]>;
+  yData$: Observable<any[]>;
 
   constructor(private mainService: MainService) { }
 
