@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { Country } from '../services/country/country';
-import { MainService } from '../services/main/main.service';
 
 @Component({
   selector: 'app-main',
@@ -10,16 +7,10 @@ import { MainService } from '../services/main/main.service';
 })
 export class MainComponent implements OnInit {
 
-  countries$: Observable<Country[]>;
-  xData$: Observable<any[]>;
-  yData$: Observable<any[]>;
 
-  constructor(private mainService: MainService) { }
+  constructor() { }
 
   ngOnInit(): void {
-
-    this.countries$ = this.mainService.getCountries();
-
   }
 
 }

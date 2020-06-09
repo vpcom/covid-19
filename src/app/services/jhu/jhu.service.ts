@@ -35,20 +35,20 @@ export class JhuService {
 
   constructor(private http: HttpClient) { }
 
-  public getDeaths(): Observable<JhuDataObject> {
-    return this.getCachedDeaths().pipe(
-      map((cachedData: JhuDataObject) => {
-        if (typeof cachedData !== 'undefined') {
-          return of(cachedData);
-        }
-      }),
-	    switchMap(cachedData => {
-        if (typeof cachedData === 'undefined') {
-          return this.getJhuDataFromEndpoint();
-        }
-      })
-    );
-  }
+  // public getDeaths(): Observable<JhuDataObject> {
+  //   return this.getCachedDeaths().pipe(
+  //     map((cachedData: JhuDataObject) => {
+  //       if (typeof cachedData !== 'undefined') {
+  //         return of(cachedData);
+  //       }
+  //     }),
+	//     switchMap(cachedData => {
+  //       if (typeof cachedData === 'undefined') {
+  //         return this.getJhuDataFromEndpoint();
+  //       }
+  //     })
+  //   );
+  // }
 
   private getCachedDeaths(): Observable<JhuDataObject> {
     return of(this.cachedDeaths);

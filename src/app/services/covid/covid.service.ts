@@ -3,8 +3,7 @@ import { Observable } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
 import { JhuDataObject } from '../jhu/jhu.d';
 import { JhuService } from '../jhu/jhu.service';
-import { Country } from '../country/country';
-import { CountryData } from '../main/main';
+import { Country } from '../../types/country.d';
 
 @Injectable({
   providedIn: 'root'
@@ -14,14 +13,32 @@ export class CovidService {
   constructor(private jhuService: JhuService) { }
 
   /**
+   * TODO get from cache or new endpoint and call a function to transform the data.
+   * 
+   * CovidData
+   * 
+   *
+  public getDeaths(): Observable<any> {
+    console.log('getDeaths',);
+    return this.jhuService.getDeaths().pipe(
+      // tap(data => { console.log(data) }),
+      map((data: JhuDataObject) => {
+        // console.log('getDeaths', data);
+
+        return data;
+      })
+    )
+  }
+
+  /**
    * TODO manage well the data here because the list include
    * repetitvie entries and specific naming and special places or territories.
    * 
    * CovidData
    * 
-   */
-  public getDeaths(countries: Country[]): Observable<any> {
-    // console.log('getDeaths', countries);
+   *
+  public getDeaths_old(countries: Country[]): Observable<any> {
+    console.log('getDeaths', countries);
     return this.jhuService.getDeaths().pipe(
       // tap(data => { console.log(data) }),
       map((data: JhuDataObject) => {
@@ -35,6 +52,8 @@ export class CovidService {
     )
   }
 
+  /*
+  // TODO use new endpoint
   public getDeathsForGraph(countries: Country[], countryFilter: string): Observable<any> {
     // console.log('getDeathsForGraph', countries, countryFilter);
     return this.jhuService.getDeaths().pipe(
@@ -51,24 +70,26 @@ export class CovidService {
         if (countryData.length === 1) {
           console.log(countryData[0].history)
           for(let i in countryData[0].history) {
-            console.log( i + " : " + countryData[0].history[i]);
+       //     console.log( i + " : " + countryData[0].history[i]);
           }
 
-        //   Object.keys(countryData[0].history).forEach(key => {
-        //     console.log(key)
-        //     x.push(key);
-        //     y.push(countryData[0].history[key]);
-        // });
+          Object.keys(countryData[0].history).forEach(key => {
+            // console.log(key)
+            x.push(key);
+            y.push(countryData[0].history[key]);
+        });
         }
 
         return {x: x, y: y};
       })
     )
   }
+  */
 
 
 
   mergeArrayObjects(populationsArray, deathsArray){
+    console.log(populationsArray, deathsArray)
     return populationsArray.map(popStat => {
       const matchingCountry = deathsArray.filter(deathsArray => deathsArray.country_code === popStat.countryCode)
      // console.log(matchingCountry);
@@ -86,6 +107,5 @@ export class CovidService {
       }
     }).filter(data => typeof data !== 'undefined');
   }
-
 
 }

@@ -1,10 +1,10 @@
+import { CountryService } from './../services/country/country.service';
 
-import { Component, OnInit, ViewChild, Input } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { MainService } from '../services/main/main.service';
+import { TableDataService } from './../services/tableData/table-data.service';
 import { forkJoin, Observable } from 'rxjs';
-import { Country } from '../services/country/country';
 import { take } from 'rxjs/operators';
 
 @Component({
@@ -14,9 +14,8 @@ import { take } from 'rxjs/operators';
 })
 export class CovidTableComponent implements OnInit {
 
-  @Input() countries: Country[];
-  
-  constructor(private mainService: MainService) { }
+  constructor(private tableDataService: TableDataService,
+              private countryService: CountryService) { }
 
   displayedColumns: string[] = ['name', 'population', 'deaths', 'deathsRatio'];
 
@@ -28,15 +27,12 @@ export class CovidTableComponent implements OnInit {
   @ViewChild(MatSort, {static: true}) sort: MatSort;
 
   ngOnInit() {
-    // this.craftMyData();
 
-    
-    console.log(this.countries);
-    this.mainService.getDeaths(this.countries)
+    this.tableDataService.getData([])
       .pipe(take(1))
-      .subscribe((deathsPerCountry: any[]) => {
+      .subscribe((deathsPerCountry: any) => {
 
-        console.log(deathsPerCountry);
+        console.log(deathsPerCountry); // TODO correct format
 
         this.dataSource = new MatTableDataSource(deathsPerCountry);
         this.dataSource.sort = this.sort;
@@ -49,31 +45,22 @@ export class CovidTableComponent implements OnInit {
    * and create new JSON data.
    */
   craftMyData() {
-    this.populations$ = this.mainService.getCountries();
-    this.deaths$ = this.mainService.getDeaths(null);
+    this.populations$ = this.countryService.getCountries();
+    this.deaths$ = this.tableDataService.getData([]);
 
     forkJoin(this.populations$, this.deaths$).subscribe(([population, deaths]) => {
 
       console.log(population);
       console.log(deaths);
-
-      // TODO convertions in the service
-      deaths.find(country => {
-        if (country.country === 'US') {
-          country.country = 'United States';
-        }
-      })
-
-      console.log(population);
       const testJson = [];
       population.forEach(popStat => {
 
-        const matchingCountry = deaths.filter(deathsArray => deathsArray.country === popStat.country);
+        const matchingCountry = deaths; //.filter(deathsArray => deathsArray.country === popStat.country);
 
-        // console.log(matchingCountry);
+        console.log(popStat);
         if (matchingCountry[0]) {
           testJson.push({
-            countryCoude: matchingCountry[0].country_code,
+            countryCode: matchingCountry[0].country_code,
             name: matchingCountry[0].country,
             population: popStat.population,
             coordinates: matchingCountry[0].coordinates
@@ -86,6 +73,6 @@ export class CovidTableComponent implements OnInit {
       const obj = JSON.stringify(testJson);
       console.log(obj);
     });
-  }
 
+  }
 }

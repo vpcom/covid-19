@@ -1,7 +1,8 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Country } from '../services/country/country';
-import { MainService } from '../services/main/main.service';
+import { GraphDataService } from './../services/graphData/graph-data.service';
+import { Component, OnInit } from '@angular/core';
 import { take } from 'rxjs/operators';
+import { CovidDataService } from '../services/covid-data/covid-data.service';
+import { Observable } from 'rxjs';
 declare let Plotly: any ;
 
 @Component({
@@ -11,19 +12,15 @@ declare let Plotly: any ;
 })
 export class CovidGraphComponent implements OnInit {
 
-  @Input() countries: Country[];
-
-  @Input() x: Number[];
-  @Input() y: Number[];
+  covidData$: Observable<any>;
   
-  constructor(private mainService: MainService) { }
+  constructor(private graphDataService: GraphDataService) { }
 
   ngOnInit(): void {
 
-
-    this.mainService.getDeathsForGraph(this.countries)
+    this.graphDataService.getData()
       .pipe(take(1))
-      .subscribe((deathsPerCountry: any[]) => {
+      .subscribe((deathsPerCountry: any) => {
         // console.log(deathsPerCountry, [deathsPerCountry['x'], deathsPerCountry['y']]);
 
         const graph = document.getElementById('covid-graph');

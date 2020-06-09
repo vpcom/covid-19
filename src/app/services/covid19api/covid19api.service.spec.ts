@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MainService } from './main.service';
+import { Covid19apiService } from './covid19api.service';
 
-describe('MainService', () => {
-  let service: MainService;
+describe('Covid19apiService', () => {
+  let service: Covid19apiService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(MainService);
+    service = TestBed.inject(Covid19apiService);
   });
 
   it('should be created', () => {
