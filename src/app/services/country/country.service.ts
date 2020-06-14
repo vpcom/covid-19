@@ -9,21 +9,21 @@ import { Country } from '../../types/country.d';
 })
 export class CountryService {
 
-  populationData = '/assets/data/countries_final.json';
+  populationData = '/assets/data/countries.json';
 
   constructor(private http: HttpClient) { }
 
   /**
    * Provides the data characterising the countries. 
+   * TODO cache
    */
   public getCountries(): Observable<Country[]> {
     return this.http.get(this.populationData).pipe(
-      tap(data => { console.log(data) }),
+      // tap(data => { console.log(data) }),
       map((data: Country[]) => {
         data.map(countryData => {
           return countryData;
         });
-        // console.log(data);
         return data;
       })
     );

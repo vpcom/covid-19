@@ -23,12 +23,12 @@ export class CovidDataService {
 
 
   public getCovidData(): Observable<any> {
-    console.log('getCovidData');
+    // console.log('getCovidData');
     
     return this.localStorageService.getCache().pipe(
       // tap(data => { console.log(data) }),
 	    map(cachedData => {
-        console.log('getCovidData cachedData', cachedData);
+        // console.log('getCovidData cachedData', cachedData);
         if (cachedData === null || cachedData.length === 0) {
           this.getDataFromEndpoint().subscribe(rawData => {
             const transformedData = this.transformCsvToTypedArray(rawData);
@@ -43,13 +43,13 @@ export class CovidDataService {
   }
 
   private getDataFromEndpoint(): Observable<any> {
-    console.log('getDataFromEndpoint');
+    // console.log('getDataFromEndpoint');
 
-    return this.http.get(this.partialLocalData, {responseType: 'text'});
+    return this.http.get(this.fullLocalData, {responseType: 'text'});
   }
 
   private transformCsvToTypedArray(data): any {
-    console.log('transformCsvToTypedArray');
+    // console.log('transformCsvToTypedArray');
 
     var csvData = {};
     var jsonObject = data.split(/\r?\n|\r/);
@@ -85,7 +85,6 @@ export class CovidDataService {
     }
     
     console.log(csvData);
-    debugger
 
     return csvData;
   }

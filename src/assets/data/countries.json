@@ -1,1478 +1,2197 @@
 [
   {
-     "countryCode":"AF",
-     "name":"Afghanistan",
-     "population":"35530081",
-     "coordinates":{
-        "latitude":33,
-        "longitude":65
-     }
-  },
-  {
-     "countryCode":"AL",
-     "name":"Albania",
-     "population":"2930187",
-     "coordinates":{
-        "latitude":41.1533,
-        "longitude":20.1683
-     }
-  },
-  {
-     "countryCode":"DZ",
-     "name":"Algeria",
-     "population":"41318142",
-     "coordinates":{
-        "latitude":28.0339,
-        "longitude":1.6596
-     }
-  },
-  {
-     "countryCode":"AD",
-     "name":"Andorra",
-     "population":"76965",
-     "coordinates":{
-        "latitude":42.5063,
-        "longitude":1.5218
-     }
-  },
-  {
-     "countryCode":"AO",
-     "name":"Angola",
-     "population":"29784193",
-     "coordinates":{
-        "latitude":-11.2027,
-        "longitude":17.8739
-     }
-  },
-  {
-     "countryCode":"AG",
-     "name":"Antigua and Barbuda",
-     "population":"102012",
-     "coordinates":{
-        "latitude":17.0608,
-        "longitude":-61.7964
-     }
-  },
-  {
-     "countryCode":"AR",
-     "name":"Argentina",
-     "population":"44271041",
-     "coordinates":{
-        "latitude":-38.4161,
-        "longitude":-63.6167
-     }
-  },
-  {
-     "countryCode":"AM",
-     "name":"Armenia",
-     "population":"2930450",
-     "coordinates":{
-        "latitude":40.0691,
-        "longitude":45.0382
-     }
-  },
-  {
-     "countryCode":"AU",
-     "name":"Australia",
-     "population":"24450561",
-     "coordinates":{
-        "latitude":-35.4735,
-        "longitude":149.0124
-     }
-  },
-  {
-     "countryCode":"AT",
-     "name":"Austria",
-     "population":"8735453",
-     "coordinates":{
-        "latitude":47.5162,
-        "longitude":14.5501
-     }
-  },
-  {
-     "countryCode":"AZ",
-     "name":"Azerbaijan",
-     "population":"9827589",
-     "coordinates":{
-        "latitude":40.1431,
-        "longitude":47.5769
-     }
-  },
-  {
-     "countryCode":"XX",
-     "name":"Bahamas",
-     "population":"395361",
-     "coordinates":{
-        "latitude":25.0343,
-        "longitude":-77.3963
-     }
-  },
-  {
-     "countryCode":"BH",
-     "name":"Bahrain",
-     "population":"1492584",
-     "coordinates":{
-        "latitude":26.0275,
-        "longitude":50.55
-     }
-  },
-  {
-     "countryCode":"BD",
-     "name":"Bangladesh",
-     "population":"164669751",
-     "coordinates":{
-        "latitude":23.685,
-        "longitude":90.3563
-     }
-  },
-  {
-     "countryCode":"BB",
-     "name":"Barbados",
-     "population":"285719",
-     "coordinates":{
-        "latitude":13.1939,
-        "longitude":-59.5432
-     }
-  },
-  {
-     "countryCode":"BY",
-     "name":"Belarus",
-     "population":"9468338",
-     "coordinates":{
-        "latitude":53.7098,
-        "longitude":27.9534
-     }
-  },
-  {
-     "countryCode":"BE",
-     "name":"Belgium",
-     "population":"11429336",
-     "coordinates":{
-        "latitude":50.8333,
-        "longitude":4
-     }
-  },
-  {
-     "countryCode":"BZ",
-     "name":"Belize",
-     "population":"374681",
-     "coordinates":{
-        "latitude":13.1939,
-        "longitude":-59.5432
-     }
-  },
-  {
-     "countryCode":"BJ",
-     "name":"Benin",
-     "population":"11175692",
-     "coordinates":{
-        "latitude":9.3077,
-        "longitude":2.3158
-     }
-  },
-  {
-     "countryCode":"BT",
-     "name":"Bhutan",
-     "population":"807610",
-     "coordinates":{
-        "latitude":27.5142,
-        "longitude":90.4336
-     }
-  },
-  {
-     "countryCode":"BO",
-     "name":"Bolivia",
-     "population":"11051600",
-     "coordinates":{
-        "latitude":-16.2902,
-        "longitude":-63.5887
-     }
-  },
-  {
-     "countryCode":"BA",
-     "name":"Bosnia and Herzegovina",
-     "population":"3507017",
-     "coordinates":{
-        "latitude":43.9159,
-        "longitude":17.6791
-     }
-  },
-  {
-     "countryCode":"BW",
-     "name":"Botswana",
-     "population":"2291661",
-     "coordinates":{
-        "latitude":-22.3285,
-        "longitude":24.6849
-     }
-  },
-  {
-     "countryCode":"BR",
-     "name":"Brazil",
-     "population":"209288278",
-     "coordinates":{
-        "latitude":-14.235,
-        "longitude":-51.9253
-     }
-  },
-  {
-     "countryCode":"BN",
-     "name":"Brunei",
-     "population":"428697",
-     "coordinates":{
-        "latitude":4.5353,
-        "longitude":114.7277
-     }
-  },
-  {
-     "countryCode":"BG",
-     "name":"Bulgaria",
-     "population":"7084571",
-     "coordinates":{
-        "latitude":42.7339,
-        "longitude":25.4858
-     }
-  },
-  {
-     "countryCode":"BF",
-     "name":"Burkina Faso",
-     "population":"19193382",
-     "coordinates":{
-        "latitude":12.2383,
-        "longitude":-1.5616
-     }
-  },
-  {
-     "countryCode":"BI",
-     "name":"Burundi",
-     "population":"10864245",
-     "coordinates":{
-        "latitude":-3.3731,
-        "longitude":29.9189
-     }
-  },
-  {
-     "countryCode":"KH",
-     "name":"Cambodia",
-     "population":"16005373",
-     "coordinates":{
-        "latitude":11.55,
-        "longitude":104.9167
-     }
-  },
-  {
-     "countryCode":"CM",
-     "name":"Cameroon",
-     "population":"24053727",
-     "coordinates":{
-        "latitude":3.848,
-        "longitude":11.5021
-     }
-  },
-  {
-     "countryCode":"CA",
-     "name":"Canada",
-     "population":"36624199",
-     "coordinates":{
-        "latitude":53.9333,
-        "longitude":-116.5765
-     }
-  },
-  {
-     "countryCode":"CF",
-     "name":"Central African Republic",
-     "population":"4659080",
-     "coordinates":{
-        "latitude":6.6111,
-        "longitude":20.9394
-     }
-  },
-  {
-     "countryCode":"TD",
-     "name":"Chad",
-     "population":"14899994",
-     "coordinates":{
-        "latitude":15.4542,
-        "longitude":18.7322
-     }
-  },
-  {
-     "countryCode":"CL",
-     "name":"Chile",
-     "population":"18054726",
-     "coordinates":{
-        "latitude":-35.6751,
-        "longitude":-71.543
-     }
-  },
-  {
-     "countryCode":"CN",
-     "name":"China",
-     "population":"1409517397",
-     "coordinates":{
-        "latitude":31.8257,
-        "longitude":117.2264
-     }
-  },
-  {
-     "countryCode":"CO",
-     "name":"Colombia",
-     "population":"49065615",
-     "coordinates":{
-        "latitude":4.5709,
-        "longitude":-74.2973
-     }
-  },
-  {
-     "countryCode":"CR",
-     "name":"Costa Rica",
-     "population":"4905769",
-     "coordinates":{
-        "latitude":9.7489,
-        "longitude":-83.7534
-     }
-  },
-  {
-     "countryCode":"HR",
-     "name":"Croatia",
-     "population":"4189353",
-     "coordinates":{
-        "latitude":45.1,
-        "longitude":15.2
-     }
-  },
-  {
-     "countryCode":"CU",
-     "name":"Cuba",
-     "population":"11484636",
-     "coordinates":{
-        "latitude":22,
-        "longitude":-80
-     }
-  },
-  {
-     "countryCode":"CY",
-     "name":"Cyprus",
-     "population":"1179551",
-     "coordinates":{
-        "latitude":35.1264,
-        "longitude":33.4299
-     }
-  },
-  {
-     "countryCode":"DK",
-     "name":"Denmark",
-     "population":"5733551",
-     "coordinates":{
-        "latitude":61.8926,
-        "longitude":-6.9118
-     }
-  },
-  {
-     "countryCode":"DJ",
-     "name":"Djibouti",
-     "population":"956985",
-     "coordinates":{
-        "latitude":11.8251,
-        "longitude":42.5903
-     }
-  },
-  {
-     "countryCode":"DM",
-     "name":"Dominica",
-     "population":"73925",
-     "coordinates":{
-        "latitude":15.415,
-        "longitude":-61.371
-     }
-  },
-  {
-     "countryCode":"DO",
-     "name":"Dominican Republic",
-     "population":"10766998",
-     "coordinates":{
-        "latitude":18.7357,
-        "longitude":-70.1627
-     }
-  },
-  {
-     "countryCode":"EC",
-     "name":"Ecuador",
-     "population":"16624858",
-     "coordinates":{
-        "latitude":-1.8312,
-        "longitude":-78.1834
-     }
-  },
-  {
-     "countryCode":"EG",
-     "name":"Egypt",
-     "population":"97553151",
-     "coordinates":{
-        "latitude":26,
-        "longitude":30
-     }
-  },
-  {
-     "countryCode":"SV",
-     "name":"El Salvador",
-     "population":"6377853",
-     "coordinates":{
-        "latitude":13.7942,
-        "longitude":-88.8965
-     }
-  },
-  {
-     "countryCode":"GQ",
-     "name":"Equatorial Guinea",
-     "population":"1267689",
-     "coordinates":{
-        "latitude":1.5,
-        "longitude":10
-     }
-  },
-  {
-     "countryCode":"ER",
-     "name":"Eritrea",
-     "population":"5068831",
-     "coordinates":{
-        "latitude":15.1794,
-        "longitude":39.7823
-     }
-  },
-  {
-     "countryCode":"EE",
-     "name":"Estonia",
-     "population":"1309632",
-     "coordinates":{
-        "latitude":58.5953,
-        "longitude":25.0136
-     }
-  },
-  {
-     "countryCode":"ET",
-     "name":"Ethiopia",
-     "population":"104957438",
-     "coordinates":{
-        "latitude":9.145,
-        "longitude":40.4897
-     }
-  },
-  {
-     "countryCode":"FI",
-     "name":"Finland",
-     "population":"5523231",
-     "coordinates":{
-        "latitude":64,
-        "longitude":26
-     }
-  },
-  {
-     "countryCode":"FR",
-     "name":"France",
-     "population":"64979548",
-     "coordinates":{
-        "latitude":3.9339,
-        "longitude":-53.1258
-     }
-  },
-  {
-     "countryCode":"GA",
-     "name":"Gabon",
-     "population":"2025137",
-     "coordinates":{
-        "latitude":-0.8037,
-        "longitude":11.6094
-     }
-  },
-  {
-     "countryCode":"GM",
-     "name":"Gambia",
-     "population":"2100568",
-     "coordinates":{
-        "latitude":13.4432,
-        "longitude":-15.3101
-     }
-  },
-  {
-     "countryCode":"GE",
-     "name":"Georgia",
-     "population":"3912061",
-     "coordinates":{
-        "latitude":42.3154,
-        "longitude":43.3569
-     }
-  },
-  {
-     "countryCode":"DE",
-     "name":"Germany",
-     "population":"82114224",
-     "coordinates":{
-        "latitude":51,
-        "longitude":9
-     }
-  },
-  {
-     "countryCode":"GH",
-     "name":"Ghana",
-     "population":"28833629",
-     "coordinates":{
-        "latitude":7.9465,
-        "longitude":-1.0232
-     }
-  },
-  {
-     "countryCode":"GR",
-     "name":"Greece",
-     "population":"11159773",
-     "coordinates":{
-        "latitude":39.0742,
-        "longitude":21.8243
-     }
-  },
-  {
-     "countryCode":"GD",
-     "name":"Grenada",
-     "population":"107825",
-     "coordinates":{
-        "latitude":12.1165,
-        "longitude":-61.679
-     }
-  },
-  {
-     "countryCode":"GT",
-     "name":"Guatemala",
-     "population":"16913503",
-     "coordinates":{
-        "latitude":15.7835,
-        "longitude":-90.2308
-     }
-  },
-  {
-     "countryCode":"GN",
-     "name":"Guinea",
-     "population":"12717176",
-     "coordinates":{
-        "latitude":9.9456,
-        "longitude":-9.6966
-     }
-  },
-  {
-     "countryCode":"GW",
-     "name":"Guinea-Bissau",
-     "population":"1861283",
-     "coordinates":{
-        "latitude":11.8037,
-        "longitude":-15.1804
-     }
-  },
-  {
-     "countryCode":"GY",
-     "name":"Guyana",
-     "population":"777859",
-     "coordinates":{
-        "latitude":5,
-        "longitude":-58.75
-     }
-  },
-  {
-     "countryCode":"HT",
-     "name":"Haiti",
-     "population":"10981229",
-     "coordinates":{
-        "latitude":18.9712,
-        "longitude":-72.2852
-     }
-  },
-  {
-     "countryCode":"HN",
-     "name":"Honduras",
-     "population":"9265067",
-     "coordinates":{
-        "latitude":15.2,
-        "longitude":-86.2419
-     }
-  },
-  {
-     "countryCode":"HU",
-     "name":"Hungary",
-     "population":"9721559",
-     "coordinates":{
-        "latitude":47.1625,
-        "longitude":19.5033
-     }
-  },
-  {
-     "countryCode":"IS",
-     "name":"Iceland",
-     "population":"335025",
-     "coordinates":{
-        "latitude":64.9631,
-        "longitude":-19.0208
-     }
-  },
-  {
-     "countryCode":"IN",
-     "name":"India",
-     "population":"1339180127",
-     "coordinates":{
-        "latitude":21,
-        "longitude":78
-     }
-  },
-  {
-     "countryCode":"ID",
-     "name":"Indonesia",
-     "population":"263991379",
-     "coordinates":{
-        "latitude":-0.7893,
-        "longitude":113.9213
-     }
-  },
-  {
-     "countryCode":"IR",
-     "name":"Iran",
-     "population":"81162788",
-     "coordinates":{
-        "latitude":32,
-        "longitude":53
-     }
-  },
-  {
-     "countryCode":"IQ",
-     "name":"Iraq",
-     "population":"38274618",
-     "coordinates":{
-        "latitude":33,
-        "longitude":44
-     }
-  },
-  {
-     "countryCode":"IE",
-     "name":"Ireland",
-     "population":"4761657",
-     "coordinates":{
-        "latitude":53.1424,
-        "longitude":-7.6921
-     }
-  },
-  {
-     "countryCode":"IL",
-     "name":"Israel",
-     "population":"8321570",
-     "coordinates":{
-        "latitude":31,
-        "longitude":35
-     }
-  },
-  {
-     "countryCode":"IT",
-     "name":"Italy",
-     "population":"59359900",
-     "coordinates":{
-        "latitude":43,
-        "longitude":12
-     }
-  },
-  {
-     "countryCode":"JM",
-     "name":"Jamaica",
-     "population":"2890299",
-     "coordinates":{
-        "latitude":18.1096,
-        "longitude":-77.2975
-     }
-  },
-  {
-     "countryCode":"JP",
-     "name":"Japan",
-     "population":"127484450",
-     "coordinates":{
-        "latitude":36,
-        "longitude":138
-     }
-  },
-  {
-     "countryCode":"JO",
-     "name":"Jordan",
-     "population":"9702353",
-     "coordinates":{
-        "latitude":31.24,
-        "longitude":36.51
-     }
-  },
-  {
-     "countryCode":"KZ",
-     "name":"Kazakhstan",
-     "population":"18204499",
-     "coordinates":{
-        "latitude":48.0196,
-        "longitude":66.9237
-     }
-  },
-  {
-     "countryCode":"KE",
-     "name":"Kenya",
-     "population":"49699862",
-     "coordinates":{
-        "latitude":-0.0236,
-        "longitude":37.9062
-     }
-  },
-  {
-     "countryCode":"KW",
-     "name":"Kuwait",
-     "population":"4136528",
-     "coordinates":{
-        "latitude":29.5,
-        "longitude":47.75
-     }
-  },
-  {
-     "countryCode":"KG",
-     "name":"Kyrgyzstan",
-     "population":"6045117",
-     "coordinates":{
-        "latitude":41.2044,
-        "longitude":74.7661
-     }
-  },
-  {
-     "countryCode":"XX",
-     "name":"Laos",
-     "population":"6858160",
-     "coordinates":{
-        "latitude":19.85627,
-        "longitude":102.495496
-     }
-  },
-  {
-     "countryCode":"LV",
-     "name":"Latvia",
-     "population":"1949670",
-     "coordinates":{
-        "latitude":56.8796,
-        "longitude":24.6032
-     }
-  },
-  {
-     "countryCode":"LB",
-     "name":"Lebanon",
-     "population":"6082357",
-     "coordinates":{
-        "latitude":33.8547,
-        "longitude":35.8623
-     }
-  },
-  {
-     "countryCode":"LR",
-     "name":"Liberia",
-     "population":"4731906",
-     "coordinates":{
-        "latitude":6.4281,
-        "longitude":-9.4295
-     }
-  },
-  {
-     "countryCode":"LI",
-     "name":"Liechtenstein",
-     "population":"37922",
-     "coordinates":{
-        "latitude":47.14,
-        "longitude":9.55
-     }
-  },
-  {
-     "countryCode":"LT",
-     "name":"Lithuania",
-     "population":"2890297",
-     "coordinates":{
-        "latitude":55.1694,
-        "longitude":23.8813
-     }
-  },
-  {
-     "countryCode":"LU",
-     "name":"Luxembourg",
-     "population":"583455",
-     "coordinates":{
-        "latitude":49.8153,
-        "longitude":6.1296
-     }
-  },
-  {
-     "countryCode":"MK",
-     "name":"North Macedonia",
-     "population":"2024000",
-     "coordinates":{
-        "latitude":41.6086,
-        "longitude":21.7453
-     }
-  },
-  {
-     "countryCode":"MG",
-     "name":"Madagascar",
-     "population":"25570895",
-     "coordinates":{
-        "latitude":-18.7669,
-        "longitude":46.8691
-     }
-  },
-  {
-     "countryCode":"MW",
-     "name":"Malawi",
-     "population":"18622104",
-     "coordinates":{
-        "latitude":-13.254307999999998,
-        "longitude":34.301525
-     }
-  },
-  {
-     "countryCode":"MY",
-     "name":"Malaysia",
-     "population":"31624264",
-     "coordinates":{
-        "latitude":2.5,
-        "longitude":112.5
-     }
-  },
-  {
-     "countryCode":"MV",
-     "name":"Maldives",
-     "population":"436330",
-     "coordinates":{
-        "latitude":3.2028,
-        "longitude":73.2207
-     }
-  },
-  {
-     "countryCode":"ML",
-     "name":"Mali",
-     "population":"18541980",
-     "coordinates":{
-        "latitude":17.570692,
-        "longitude":-3.996166000000001
-     }
-  },
-  {
-     "countryCode":"MT",
-     "name":"Malta",
-     "population":"430835",
-     "coordinates":{
-        "latitude":35.9375,
-        "longitude":14.3754
-     }
-  },
-  {
-     "countryCode":"MR",
-     "name":"Mauritania",
-     "population":"4420184",
-     "coordinates":{
-        "latitude":21.0079,
-        "longitude":10.9408
-     }
-  },
-  {
-     "countryCode":"MU",
-     "name":"Mauritius",
-     "population":"1265138",
-     "coordinates":{
-        "latitude":-20.2,
-        "longitude":57.5
-     }
-  },
-  {
-     "countryCode":"MX",
-     "name":"Mexico",
-     "population":"129163276",
-     "coordinates":{
-        "latitude":23.6345,
-        "longitude":-102.5528
-     }
-  },
-  {
-     "countryCode":"MD",
-     "name":"Moldova",
-     "population":"4051212",
-     "coordinates":{
-        "latitude":47.4116,
-        "longitude":28.3699
-     }
-  },
-  {
-     "countryCode":"MC",
-     "name":"Monaco",
-     "population":"38695",
-     "coordinates":{
-        "latitude":43.7333,
-        "longitude":7.4167
-     }
-  },
-  {
-     "countryCode":"MN",
-     "name":"Mongolia",
-     "population":"3075647",
-     "coordinates":{
-        "latitude":46.8625,
-        "longitude":103.8467
-     }
-  },
-  {
-     "countryCode":"MA",
-     "name":"Morocco",
-     "population":"35739580",
-     "coordinates":{
-        "latitude":31.7917,
-        "longitude":-7.0926
-     }
-  },
-  {
-     "countryCode":"MZ",
-     "name":"Mozambique",
-     "population":"29668834",
-     "coordinates":{
-        "latitude":-18.665695,
-        "longitude":35.529562
-     }
-  },
-  {
-     "countryCode":"NA",
-     "name":"Namibia",
-     "population":"2533794",
-     "coordinates":{
-        "latitude":-22.9576,
-        "longitude":18.4904
-     }
-  },
-  {
-     "countryCode":"NP",
-     "name":"Nepal",
-     "population":"29304998",
-     "coordinates":{
-        "latitude":28.1667,
-        "longitude":84.25
-     }
-  },
-  {
-     "countryCode":"NL",
-     "name":"Netherlands",
-     "population":"17035938",
-     "coordinates":{
-        "latitude":12.5186,
-        "longitude":-70.0358
-     }
-  },
-  {
-     "countryCode":"NZ",
-     "name":"New Zealand",
-     "population":"4705818",
-     "coordinates":{
-        "latitude":-40.9006,
-        "longitude":174.886
-     }
-  },
-  {
-     "countryCode":"NI",
-     "name":"Nicaragua",
-     "population":"6217581",
-     "coordinates":{
-        "latitude":12.8654,
-        "longitude":-85.2072
-     }
-  },
-  {
-     "countryCode":"NE",
-     "name":"Niger",
-     "population":"21477348",
-     "coordinates":{
-        "latitude":17.6078,
-        "longitude":8.0817
-     }
-  },
-  {
-     "countryCode":"NG",
-     "name":"Nigeria",
-     "population":"190886311",
-     "coordinates":{
-        "latitude":9.082,
-        "longitude":8.6753
-     }
-  },
-  {
-     "countryCode":"NO",
-     "name":"Norway",
-     "population":"5305383",
-     "coordinates":{
-        "latitude":60.472,
-        "longitude":8.4689
-     }
-  },
-  {
-     "countryCode":"OM",
-     "name":"Oman",
-     "population":"4636262",
-     "coordinates":{
-        "latitude":21,
-        "longitude":57
-     }
-  },
-  {
-     "countryCode":"PK",
-     "name":"Pakistan",
-     "population":"197015955",
-     "coordinates":{
-        "latitude":30.3753,
-        "longitude":69.3451
-     }
-  },
-  {
-     "countryCode":"PA",
-     "name":"Panama",
-     "population":"4098587",
-     "coordinates":{
-        "latitude":8.538,
-        "longitude":-80.7821
-     }
-  },
-  {
-     "countryCode":"PG",
-     "name":"Papua New Guinea",
-     "population":"8251162",
-     "coordinates":{
-        "latitude":-6.315,
-        "longitude":143.9555
-     }
-  },
-  {
-     "countryCode":"PY",
-     "name":"Paraguay",
-     "population":"6811297",
-     "coordinates":{
-        "latitude":-23.4425,
-        "longitude":-58.4438
-     }
-  },
-  {
-     "countryCode":"PE",
-     "name":"Peru",
-     "population":"32165485",
-     "coordinates":{
-        "latitude":-9.19,
-        "longitude":-75.0152
-     }
-  },
-  {
-     "countryCode":"PH",
-     "name":"Philippines",
-     "population":"104918090",
-     "coordinates":{
-        "latitude":13,
-        "longitude":122
-     }
-  },
-  {
-     "countryCode":"PL",
-     "name":"Poland",
-     "population":"38170712",
-     "coordinates":{
-        "latitude":51.9194,
-        "longitude":19.1451
-     }
-  },
-  {
-     "countryCode":"PT",
-     "name":"Portugal",
-     "population":"10329506",
-     "coordinates":{
-        "latitude":39.3999,
-        "longitude":-8.2245
-     }
-  },
-  {
-     "countryCode":"QA",
-     "name":"Qatar",
-     "population":"2639211",
-     "coordinates":{
-        "latitude":25.3548,
-        "longitude":51.1839
-     }
-  },
-  {
-     "countryCode":"RO",
-     "name":"Romania",
-     "population":"19679306",
-     "coordinates":{
-        "latitude":45.9432,
-        "longitude":24.9668
-     }
-  },
-  {
-     "countryCode":"RW",
-     "name":"Rwanda",
-     "population":"12208407",
-     "coordinates":{
-        "latitude":-1.9403,
-        "longitude":29.8739
-     }
-  },
-  {
-     "countryCode":"KN",
-     "name":"Saint Kitts and Nevis",
-     "population":"55345",
-     "coordinates":{
-        "latitude":17.357822,
-        "longitude":-62.782998
-     }
-  },
-  {
-     "countryCode":"LC",
-     "name":"Saint Lucia",
-     "population":"178844",
-     "coordinates":{
-        "latitude":13.9094,
-        "longitude":-60.9789
-     }
-  },
-  {
-     "countryCode":"VC",
-     "name":"Saint Vincent and the Grenadines",
-     "population":"109897",
-     "coordinates":{
-        "latitude":12.9843,
-        "longitude":-61.2872
-     }
-  },
-  {
-     "countryCode":"SM",
-     "name":"San Marino",
-     "population":"33400",
-     "coordinates":{
-        "latitude":43.9424,
-        "longitude":12.4578
-     }
-  },
-  {
-     "countryCode":"ST",
-     "name":"Sao Tome and Principe",
-     "population":"204327",
-     "coordinates":{
-        "latitude":0.18636,
-        "longitude":6.613081
-     }
-  },
-  {
-     "countryCode":"SA",
-     "name":"Saudi Arabia",
-     "population":"32938213",
-     "coordinates":{
-        "latitude":24,
-        "longitude":45
-     }
-  },
-  {
-     "countryCode":"SN",
-     "name":"Senegal",
-     "population":"15850567",
-     "coordinates":{
-        "latitude":14.4974,
-        "longitude":-14.4524
-     }
-  },
-  {
-     "countryCode":"SC",
-     "name":"Seychelles",
-     "population":"94737",
-     "coordinates":{
-        "latitude":-4.6796,
-        "longitude":55.492
-     }
-  },
-  {
-     "countryCode":"SL",
-     "name":"Sierra Leone",
-     "population":"7557212",
-     "coordinates":{
-        "latitude":8.460555000000001,
-        "longitude":-11.779889
-     }
-  },
-  {
-     "countryCode":"SG",
-     "name":"Singapore",
-     "population":"5708844",
-     "coordinates":{
-        "latitude":1.2833,
-        "longitude":103.8333
-     }
-  },
-  {
-     "countryCode":"SK",
-     "name":"Slovakia",
-     "population":"5447662",
-     "coordinates":{
-        "latitude":48.669,
-        "longitude":19.699
-     }
-  },
-  {
-     "countryCode":"SI",
-     "name":"Slovenia",
-     "population":"2079976",
-     "coordinates":{
-        "latitude":46.1512,
-        "longitude":14.9955
-     }
-  },
-  {
-     "countryCode":"SO",
-     "name":"Somalia",
-     "population":"14742523",
-     "coordinates":{
-        "latitude":5.1521,
-        "longitude":46.1996
-     }
-  },
-  {
-     "countryCode":"ZA",
-     "name":"South Africa",
-     "population":"56717156",
-     "coordinates":{
-        "latitude":-30.5595,
-        "longitude":22.9375
-     }
-  },
-  {
-     "countryCode":"SS",
-     "name":"South Sudan",
-     "population":"12575714",
-     "coordinates":{
-        "latitude":6.877000000000002,
-        "longitude":31.307
-     }
-  },
-  {
-     "countryCode":"ES",
-     "name":"Spain",
-     "population":"46354321",
-     "coordinates":{
-        "latitude":40,
-        "longitude":-4
-     }
-  },
-  {
-     "countryCode":"SD",
-     "name":"Sudan",
-     "population":"40533330",
-     "coordinates":{
-        "latitude":12.8628,
-        "longitude":30.2176
-     }
-  },
-  {
-     "countryCode":"SR",
-     "name":"Suriname",
-     "population":"563402",
-     "coordinates":{
-        "latitude":3.9193,
-        "longitude":-56.0278
-     }
-  },
-  {
-     "countryCode":"SE",
-     "name":"Sweden",
-     "population":"9910701",
-     "coordinates":{
-        "latitude":63,
-        "longitude":16
-     }
-  },
-  {
-     "countryCode":"CH",
-     "name":"Switzerland",
-     "population":"8476005",
-     "coordinates":{
-        "latitude":46.8182,
-        "longitude":8.2275
-     }
-  },
-  {
-     "countryCode":"XX",
-     "name":"Syria",
-     "population":"18269868",
-     "coordinates":{
-        "latitude":34.802075,
-        "longitude":38.99681500000001
-     }
-  },
-  {
-     "countryCode":"TZ",
-     "name":"Tanzania",
-     "population":"57310019",
-     "coordinates":{
-        "latitude":-6.369,
-        "longitude":34.8888
-     }
-  },
-  {
-     "countryCode":"TH",
-     "name":"Thailand",
-     "population":"69037513",
-     "coordinates":{
-        "latitude":15,
-        "longitude":101
-     }
-  },
-  {
-     "countryCode":"TG",
-     "name":"Togo",
-     "population":"7797694",
-     "coordinates":{
-        "latitude":8.6195,
-        "longitude":0.8248
-     }
-  },
-  {
-     "countryCode":"TT",
-     "name":"Trinidad and Tobago",
-     "population":"1369125",
-     "coordinates":{
-        "latitude":10.6918,
-        "longitude":-61.2225
-     }
-  },
-  {
-     "countryCode":"TN",
-     "name":"Tunisia",
-     "population":"11532127",
-     "coordinates":{
-        "latitude":34,
-        "longitude":9
-     }
-  },
-  {
-     "countryCode":"TR",
-     "name":"Turkey",
-     "population":"80745020",
-     "coordinates":{
-        "latitude":38.9637,
-        "longitude":35.2433
-     }
-  },
-  {
-     "countryCode":"UG",
-     "name":"Uganda",
-     "population":"42862958",
-     "coordinates":{
-        "latitude":1,
-        "longitude":32
-     }
-  },
-  {
-     "countryCode":"UA",
-     "name":"Ukraine",
-     "population":"44222947",
-     "coordinates":{
-        "latitude":48.3794,
-        "longitude":31.1656
-     }
-  },
-  {
-     "countryCode":"AE",
-     "name":"United Arab Emirates",
-     "population":"9400145",
-     "coordinates":{
-        "latitude":24,
-        "longitude":54
-     }
-  },
-  {
-     "countryCode":"GB",
-     "name":"United Kingdom",
-     "population":"66181585",
-     "coordinates":{
-        "latitude":32.3078,
-        "longitude":-64.7505
-     }
-  },
-  {
-     "countryCode":"US",
-     "name":"United States",
-     "population":"324459463",
-     "coordinates":{
-        "latitude":37.0902,
-        "longitude":-95.7129
-     }
-  },
-  {
-     "countryCode":"UY",
-     "name":"Uruguay",
-     "population":"3456750",
-     "coordinates":{
-        "latitude":-32.5228,
-        "longitude":-55.7658
-     }
-  },
-  {
-     "countryCode":"UZ",
-     "name":"Uzbekistan",
-     "population":"31910641",
-     "coordinates":{
-        "latitude":41.3775,
-        "longitude":64.5853
-     }
-  },
-  {
-     "countryCode":"XX",
-     "name":"Venezuela",
-     "population":"31977065",
-     "coordinates":{
-        "latitude":6.4238,
-        "longitude":-66.5897
-     }
-  },
-  {
-     "countryCode":"VN",
-     "name":"Vietnam",
-     "population":"95540800",
-     "coordinates":{
-        "latitude":16,
-        "longitude":108
-     }
-  },
-  {
-     "countryCode":"EH",
-     "name":"Western Sahara",
-     "population":"552628",
-     "coordinates":{
-        "latitude":24.2155,
-        "longitude":-12.8858
-     }
-  },
-  {
-     "countryCode":"YE",
-     "name":"Yemen",
-     "population":"28250420",
-     "coordinates":{
-        "latitude":15.552727,
-        "longitude":48.516388
-     }
-  },
-  {
-     "countryCode":"ZM",
-     "name":"Zambia",
-     "population":"17094130",
-     "coordinates":{
-        "latitude":-15.4167,
-        "longitude":28.2833
-     }
-  },
-  {
-     "countryCode":"ZW",
-     "name":"Zimbabwe",
-     "population":"16529904",
-     "coordinates":{
-        "latitude":-20,
-        "longitude":30
-     }
+    "name": "Afghanistan",
+    "alpha2code": "AF",
+    "alpha3code": "AFG",
+    "coordinates": {
+      "latitude": 33,
+      "longitude": 65
+    },
+    "slug": "afghanistan",
+    "region": "Asia",
+    "population": 34656032
+  },
+  {
+    "name": "Albania",
+    "alpha2code": "AL",
+    "alpha3code": "ALB",
+    "coordinates": {
+      "latitude": 41.1533,
+      "longitude": 20.1683
+    },
+    "slug": "albania",
+    "region": "Europe",
+    "population": 2876101
+  },
+  {
+    "name": "Algeria",
+    "alpha2code": "DZ",
+    "alpha3code": "DZA",
+    "coordinates": {
+      "latitude": 28.0339,
+      "longitude": 1.6596
+    },
+    "slug": "algeria",
+    "region": "Africa",
+    "population": 40606052
+  },
+  {
+    "name": "Andorra",
+    "alpha2code": "AD",
+    "alpha3code": "AND",
+    "coordinates": {
+      "latitude": 42.5063,
+      "longitude": 1.5218
+    },
+    "slug": "andorra",
+    "region": "Europe",
+    "population": 77281
+  },
+  {
+    "name": "Angola",
+    "alpha2code": "AO",
+    "alpha3code": "AGO",
+    "coordinates": {
+      "latitude": -11.2027,
+      "longitude": 17.8739
+    },
+    "slug": "angola",
+    "region": "Africa",
+    "population": 28813463
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "alpha2code": "AG",
+    "alpha3code": "ATG",
+    "coordinates": {
+      "latitude": 17.0608,
+      "longitude": -61.7964
+    },
+    "slug": "antigua-and-barbuda",
+    "region": "Americas",
+    "population": 100963
+  },
+  {
+    "name": "Argentina",
+    "alpha2code": "AR",
+    "alpha3code": "ARG",
+    "coordinates": {
+      "latitude": -38.4161,
+      "longitude": -63.6167
+    },
+    "slug": "argentina",
+    "region": "Americas",
+    "population": 43847430
+  },
+  {
+    "name": "Armenia",
+    "alpha2code": "AM",
+    "alpha3code": "ARM",
+    "coordinates": {
+      "latitude": 40.0691,
+      "longitude": 45.0382
+    },
+    "slug": "armenia",
+    "region": "Asia",
+    "population": 2924816
+  },
+  {
+    "name": "Australia",
+    "alpha2code": "AU",
+    "alpha3code": "AUS",
+    "coordinates": {
+      "latitude": -35.4735,
+      "longitude": 149.0124
+    },
+    "slug": "australia",
+    "region": "Oceania",
+    "population": 24127159
+  },
+  {
+    "name": "Austria",
+    "alpha2code": "AT",
+    "alpha3code": "AUT",
+    "coordinates": {
+      "latitude": 47.5162,
+      "longitude": 14.5501
+    },
+    "slug": "austria",
+    "region": "Europe",
+    "population": 8747358
+  },
+  {
+    "name": "Azerbaijan",
+    "alpha2code": "AZ",
+    "alpha3code": "AZE",
+    "coordinates": {
+      "latitude": 40.1431,
+      "longitude": 47.5769
+    },
+    "slug": "azerbaijan",
+    "region": "Asia",
+    "population": 9762274
+  },
+  {
+    "name": "Bahamas",
+    "alpha2code": "BS",
+    "alpha3code": "BHS",
+    "slug": "bahamas",
+    "region": "Americas",
+    "population": 391232
+  },
+  {
+    "name": "Bahrain",
+    "alpha2code": "BH",
+    "alpha3code": "BHR",
+    "coordinates": {
+      "latitude": 26.0275,
+      "longitude": 50.55
+    },
+    "slug": "bahrain",
+    "region": "Asia",
+    "population": 1425171
+  },
+  {
+    "name": "Bangladesh",
+    "alpha2code": "BD",
+    "alpha3code": "BGD",
+    "coordinates": {
+      "latitude": 23.685,
+      "longitude": 90.3563
+    },
+    "slug": "bangladesh",
+    "region": "Asia",
+    "population": 162951560
+  },
+  {
+    "name": "Barbados",
+    "alpha2code": "BB",
+    "alpha3code": "BRB",
+    "coordinates": {
+      "latitude": 13.1939,
+      "longitude": -59.5432
+    },
+    "slug": "barbados",
+    "region": "Americas",
+    "population": 284996
+  },
+  {
+    "name": "Belarus",
+    "alpha2code": "BY",
+    "alpha3code": "BLR",
+    "coordinates": {
+      "latitude": 53.7098,
+      "longitude": 27.9534
+    },
+    "slug": "belarus",
+    "region": "Europe",
+    "population": 9507120
+  },
+  {
+    "name": "Belgium",
+    "alpha2code": "BE",
+    "alpha3code": "BEL",
+    "coordinates": {
+      "latitude": 50.8333,
+      "longitude": 4
+    },
+    "slug": "belgium",
+    "region": "Europe",
+    "population": 11348159
+  },
+  {
+    "name": "Belize",
+    "alpha2code": "BZ",
+    "alpha3code": "BLZ",
+    "coordinates": {
+      "latitude": 13.1939,
+      "longitude": -59.5432
+    },
+    "slug": "belize",
+    "region": "Americas",
+    "population": 366954
+  },
+  {
+    "name": "Benin",
+    "alpha2code": "BJ",
+    "alpha3code": "BEN",
+    "coordinates": {
+      "latitude": 9.3077,
+      "longitude": 2.3158
+    },
+    "slug": "benin",
+    "region": "Africa",
+    "population": 10872298
+  },
+  {
+    "name": "Bhutan",
+    "alpha2code": "BT",
+    "alpha3code": "BTN",
+    "coordinates": {
+      "latitude": 27.5142,
+      "longitude": 90.4336
+    },
+    "slug": "bhutan",
+    "region": "Asia",
+    "population": 797765
+  },
+  {
+    "name": "Bolivia (Plurinational State of)",
+    "alpha2code": "BO",
+    "alpha3code": "BOL",
+    "coordinates": {
+      "latitude": -16.2902,
+      "longitude": -63.5887
+    },
+    "slug": "bolivia",
+    "region": "Americas",
+    "population": 10887882
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "alpha2code": "BA",
+    "alpha3code": "BIH",
+    "coordinates": {
+      "latitude": 43.9159,
+      "longitude": 17.6791
+    },
+    "slug": "bosnia-and-herzegovina",
+    "region": "Europe",
+    "population": 3516816
+  },
+  {
+    "name": "Botswana",
+    "alpha2code": "BW",
+    "alpha3code": "BWA",
+    "coordinates": {
+      "latitude": -22.3285,
+      "longitude": 24.6849
+    },
+    "slug": "botswana",
+    "region": "Africa",
+    "population": 2250260
+  },
+  {
+    "name": "Brazil",
+    "alpha2code": "BR",
+    "alpha3code": "BRA",
+    "coordinates": {
+      "latitude": -14.235,
+      "longitude": -51.9253
+    },
+    "slug": "brazil",
+    "region": "Americas",
+    "population": 207652865
+  },
+  {
+    "name": "Brunei Darussalam",
+    "alpha2code": "BN",
+    "alpha3code": "BRN",
+    "coordinates": {
+      "latitude": 4.5353,
+      "longitude": 114.7277
+    },
+    "slug": "brunei",
+    "region": "Asia",
+    "population": 423196
+  },
+  {
+    "name": "Bulgaria",
+    "alpha2code": "BG",
+    "alpha3code": "BGR",
+    "coordinates": {
+      "latitude": 42.7339,
+      "longitude": 25.4858
+    },
+    "slug": "bulgaria",
+    "region": "Europe",
+    "population": 7127822
+  },
+  {
+    "name": "Burkina Faso",
+    "alpha2code": "BF",
+    "alpha3code": "BFA",
+    "coordinates": {
+      "latitude": 12.2383,
+      "longitude": -1.5616
+    },
+    "slug": "burkina-faso",
+    "region": "Africa",
+    "population": 18646433
+  },
+  {
+    "name": "Burundi",
+    "alpha2code": "BI",
+    "alpha3code": "BDI",
+    "coordinates": {
+      "latitude": -3.3731,
+      "longitude": 29.9189
+    },
+    "slug": "burundi",
+    "region": "Africa",
+    "population": 10524117
+  },
+  {
+    "name": "Cabo Verde",
+    "alpha2code": "CV",
+    "alpha3code": "CPV",
+    "slug": "cape-verde",
+    "region": "Africa",
+    "population": 539560
+  },
+  {
+    "name": "Cambodia",
+    "alpha2code": "KH",
+    "alpha3code": "KHM",
+    "coordinates": {
+      "latitude": 11.55,
+      "longitude": 104.9167
+    },
+    "slug": "cambodia",
+    "region": "Asia",
+    "population": 15762370
+  },
+  {
+    "name": "Cameroon",
+    "alpha2code": "CM",
+    "alpha3code": "CMR",
+    "coordinates": {
+      "latitude": 3.848,
+      "longitude": 11.5021
+    },
+    "slug": "cameroon",
+    "region": "Africa",
+    "population": 23439189
+  },
+  {
+    "name": "Canada",
+    "alpha2code": "CA",
+    "alpha3code": "CAN",
+    "coordinates": {
+      "latitude": 53.9333,
+      "longitude": -116.5765
+    },
+    "slug": "canada",
+    "region": "Americas",
+    "population": 36286425
+  },
+  {
+    "name": "Central African Republic",
+    "alpha2code": "CF",
+    "alpha3code": "CAF",
+    "coordinates": {
+      "latitude": 6.6111,
+      "longitude": 20.9394
+    },
+    "slug": "central-african-republic",
+    "region": "Africa",
+    "population": 4594621
+  },
+  {
+    "name": "Chad",
+    "alpha2code": "TD",
+    "alpha3code": "TCD",
+    "coordinates": {
+      "latitude": 15.4542,
+      "longitude": 18.7322
+    },
+    "slug": "chad",
+    "region": "Africa",
+    "population": 14452543
+  },
+  {
+    "name": "Chile",
+    "alpha2code": "CL",
+    "alpha3code": "CHL",
+    "coordinates": {
+      "latitude": -35.6751,
+      "longitude": -71.543
+    },
+    "slug": "chile",
+    "region": "Americas",
+    "population": 17909754
+  },
+  {
+    "name": "China",
+    "alpha2code": "CN",
+    "alpha3code": "CHN",
+    "coordinates": {
+      "latitude": 31.8257,
+      "longitude": 117.2264
+    },
+    "slug": "china",
+    "region": "Asia",
+    "population": 1378665000
+  },
+  {
+    "name": "Colombia",
+    "alpha2code": "CO",
+    "alpha3code": "COL",
+    "coordinates": {
+      "latitude": 4.5709,
+      "longitude": -74.2973
+    },
+    "slug": "colombia",
+    "region": "Americas",
+    "population": 48653419
+  },
+  {
+    "name": "Comoros",
+    "alpha2code": "KM",
+    "alpha3code": "COM",
+    "slug": "comoros",
+    "region": "Africa",
+    "population": 795601
+  },
+  {
+    "name": "Congo",
+    "alpha2code": "CG",
+    "alpha3code": "COG",
+    "slug": "congo-brazzaville",
+    "region": "Africa",
+    "population": 5125821
+  },
+  {
+    "name": "Congo, Democratic Republic of the",
+    "alpha2code": "CD",
+    "alpha3code": "COD",
+    "slug": "congo-kinshasa",
+    "region": "Africa",
+    "population": 78736153
+  },
+  {
+    "name": "Costa Rica",
+    "alpha2code": "CR",
+    "alpha3code": "CRI",
+    "coordinates": {
+      "latitude": 9.7489,
+      "longitude": -83.7534
+    },
+    "slug": "costa-rica",
+    "region": "Americas",
+    "population": 4857274
+  },
+  {
+    "name": "Côte d'Ivoire",
+    "alpha2code": "CI",
+    "alpha3code": "CIV",
+    "slug": "cote-divoire",
+    "region": "Africa",
+    "population": 23695919
+  },
+  {
+    "name": "Croatia",
+    "alpha2code": "HR",
+    "alpha3code": "HRV",
+    "coordinates": {
+      "latitude": 45.1,
+      "longitude": 15.2
+    },
+    "slug": "croatia",
+    "region": "Europe",
+    "population": 4170600
+  },
+  {
+    "name": "Cuba",
+    "alpha2code": "CU",
+    "alpha3code": "CUB",
+    "coordinates": {
+      "latitude": 22,
+      "longitude": -80
+    },
+    "slug": "cuba",
+    "region": "Americas",
+    "population": 11475982
+  },
+  {
+    "name": "Cyprus",
+    "alpha2code": "CY",
+    "alpha3code": "CYP",
+    "coordinates": {
+      "latitude": 35.1264,
+      "longitude": 33.4299
+    },
+    "slug": "cyprus",
+    "region": "Europe",
+    "population": 1170125
+  },
+  {
+    "name": "Czechia",
+    "alpha2code": "CZ",
+    "alpha3code": "CZE",
+    "slug": "czech-republic",
+    "region": "Europe",
+    "population": 10561633
+  },
+  {
+    "name": "Denmark",
+    "alpha2code": "DK",
+    "alpha3code": "DNK",
+    "coordinates": {
+      "latitude": 61.8926,
+      "longitude": -6.9118
+    },
+    "slug": "denmark",
+    "region": "Europe",
+    "population": 5731118
+  },
+  {
+    "name": "Djibouti",
+    "alpha2code": "DJ",
+    "alpha3code": "DJI",
+    "coordinates": {
+      "latitude": 11.8251,
+      "longitude": 42.5903
+    },
+    "slug": "djibouti",
+    "region": "Africa",
+    "population": 942333
+  },
+  {
+    "name": "Dominica",
+    "alpha2code": "DM",
+    "alpha3code": "DMA",
+    "coordinates": {
+      "latitude": 15.415,
+      "longitude": -61.371
+    },
+    "slug": "dominica",
+    "region": "Americas",
+    "population": 73543
+  },
+  {
+    "name": "Dominican Republic",
+    "alpha2code": "DO",
+    "alpha3code": "DOM",
+    "coordinates": {
+      "latitude": 18.7357,
+      "longitude": -70.1627
+    },
+    "slug": "dominican-republic",
+    "region": "Americas",
+    "population": 10648791
+  },
+  {
+    "name": "Ecuador",
+    "alpha2code": "EC",
+    "alpha3code": "ECU",
+    "coordinates": {
+      "latitude": -1.8312,
+      "longitude": -78.1834
+    },
+    "slug": "ecuador",
+    "region": "Americas",
+    "population": 16385068
+  },
+  {
+    "name": "Egypt",
+    "alpha2code": "EG",
+    "alpha3code": "EGY",
+    "coordinates": {
+      "latitude": 26,
+      "longitude": 30
+    },
+    "slug": "egypt",
+    "region": "Africa",
+    "population": 95688681
+  },
+  {
+    "name": "El Salvador",
+    "alpha2code": "SV",
+    "alpha3code": "SLV",
+    "coordinates": {
+      "latitude": 13.7942,
+      "longitude": -88.8965
+    },
+    "slug": "el-salvador",
+    "region": "Americas",
+    "population": 6344722
+  },
+  {
+    "name": "Equatorial Guinea",
+    "alpha2code": "GQ",
+    "alpha3code": "GNQ",
+    "coordinates": {
+      "latitude": 1.5,
+      "longitude": 10
+    },
+    "slug": "equatorial-guinea",
+    "region": "Africa",
+    "population": 1221490
+  },
+  {
+    "name": "Eritrea",
+    "alpha2code": "ER",
+    "alpha3code": "ERI",
+    "coordinates": {
+      "latitude": 15.1794,
+      "longitude": 39.7823
+    },
+    "slug": "eritrea",
+    "region": "Africa",
+    "population": null
+  },
+  {
+    "name": "Estonia",
+    "alpha2code": "EE",
+    "alpha3code": "EST",
+    "coordinates": {
+      "latitude": 58.5953,
+      "longitude": 25.0136
+    },
+    "slug": "estonia",
+    "region": "Europe",
+    "population": 1316481
+  },
+  {
+    "name": "Eswatini",
+    "alpha2code": "SZ",
+    "alpha3code": "SWZ",
+    "slug": "swaziland",
+    "region": "Africa",
+    "population": 1343098
+  },
+  {
+    "name": "Ethiopia",
+    "alpha2code": "ET",
+    "alpha3code": "ETH",
+    "coordinates": {
+      "latitude": 9.145,
+      "longitude": 40.4897
+    },
+    "slug": "ethiopia",
+    "region": "Africa",
+    "population": 102403196
+  },
+  {
+    "name": "Fiji",
+    "alpha2code": "FJ",
+    "alpha3code": "FJI",
+    "slug": "fiji",
+    "region": "Oceania",
+    "population": 898760
+  },
+  {
+    "name": "Finland",
+    "alpha2code": "FI",
+    "alpha3code": "FIN",
+    "coordinates": {
+      "latitude": 64,
+      "longitude": 26
+    },
+    "slug": "finland",
+    "region": "Europe",
+    "population": 5495096
+  },
+  {
+    "name": "France",
+    "alpha2code": "FR",
+    "alpha3code": "FRA",
+    "coordinates": {
+      "latitude": 3.9339,
+      "longitude": -53.1258
+    },
+    "slug": "france",
+    "region": "Europe",
+    "population": 66896109
+  },
+  {
+    "name": "Gabon",
+    "alpha2code": "GA",
+    "alpha3code": "GAB",
+    "coordinates": {
+      "latitude": -0.8037,
+      "longitude": 11.6094
+    },
+    "slug": "gabon",
+    "region": "Africa",
+    "population": 1979786
+  },
+  {
+    "name": "Gambia",
+    "alpha2code": "GM",
+    "alpha3code": "GMB",
+    "coordinates": {
+      "latitude": 13.4432,
+      "longitude": -15.3101
+    },
+    "slug": "gambia",
+    "region": "Africa",
+    "population": 2038501
+  },
+  {
+    "name": "Georgia",
+    "alpha2code": "GE",
+    "alpha3code": "GEO",
+    "coordinates": {
+      "latitude": 42.3154,
+      "longitude": 43.3569
+    },
+    "slug": "georgia",
+    "region": "Asia",
+    "population": 3719300
+  },
+  {
+    "name": "Germany",
+    "alpha2code": "DE",
+    "alpha3code": "DEU",
+    "coordinates": {
+      "latitude": 51,
+      "longitude": 9
+    },
+    "slug": "germany",
+    "region": "Europe",
+    "population": 82667685
+  },
+  {
+    "name": "Ghana",
+    "alpha2code": "GH",
+    "alpha3code": "GHA",
+    "coordinates": {
+      "latitude": 7.9465,
+      "longitude": -1.0232
+    },
+    "slug": "ghana",
+    "region": "Africa",
+    "population": 28206728
+  },
+  {
+    "name": "Greece",
+    "alpha2code": "GR",
+    "alpha3code": "GRC",
+    "coordinates": {
+      "latitude": 39.0742,
+      "longitude": 21.8243
+    },
+    "slug": "greece",
+    "region": "Europe",
+    "population": 10746740
+  },
+  {
+    "name": "Grenada",
+    "alpha2code": "GD",
+    "alpha3code": "GRD",
+    "coordinates": {
+      "latitude": 12.1165,
+      "longitude": -61.679
+    },
+    "slug": "grenada",
+    "region": "Americas",
+    "population": 107317
+  },
+  {
+    "name": "Guatemala",
+    "alpha2code": "GT",
+    "alpha3code": "GTM",
+    "coordinates": {
+      "latitude": 15.7835,
+      "longitude": -90.2308
+    },
+    "slug": "guatemala",
+    "region": "Americas",
+    "population": 16582469
+  },
+  {
+    "name": "Guinea",
+    "alpha2code": "GN",
+    "alpha3code": "GIN",
+    "coordinates": {
+      "latitude": 9.9456,
+      "longitude": -9.6966
+    },
+    "slug": "guinea",
+    "region": "Africa",
+    "population": 12395924
+  },
+  {
+    "name": "Guinea-Bissau",
+    "alpha2code": "GW",
+    "alpha3code": "GNB",
+    "coordinates": {
+      "latitude": 11.8037,
+      "longitude": -15.1804
+    },
+    "slug": "guinea-bissau",
+    "region": "Africa",
+    "population": 1815698
+  },
+  {
+    "name": "Guyana",
+    "alpha2code": "GY",
+    "alpha3code": "GUY",
+    "coordinates": {
+      "latitude": 5,
+      "longitude": -58.75
+    },
+    "slug": "guyana",
+    "region": "Americas",
+    "population": 773303
+  },
+  {
+    "name": "Haiti",
+    "alpha2code": "HT",
+    "alpha3code": "HTI",
+    "coordinates": {
+      "latitude": 18.9712,
+      "longitude": -72.2852
+    },
+    "slug": "haiti",
+    "region": "Americas",
+    "population": 10847334
+  },
+  {
+    "name": "Holy See",
+    "alpha2code": "VA",
+    "alpha3code": "VAT",
+    "slug": "holy-see-vatican-city-state",
+    "region": "Europe"
+  },
+  {
+    "name": "Honduras",
+    "alpha2code": "HN",
+    "alpha3code": "HND",
+    "coordinates": {
+      "latitude": 15.2,
+      "longitude": -86.2419
+    },
+    "slug": "honduras",
+    "region": "Americas",
+    "population": 9112867
+  },
+  {
+    "name": "Hungary",
+    "alpha2code": "HU",
+    "alpha3code": "HUN",
+    "coordinates": {
+      "latitude": 47.1625,
+      "longitude": 19.5033
+    },
+    "slug": "hungary",
+    "region": "Europe",
+    "population": 9817958
+  },
+  {
+    "name": "Iceland",
+    "alpha2code": "IS",
+    "alpha3code": "ISL",
+    "coordinates": {
+      "latitude": 64.9631,
+      "longitude": -19.0208
+    },
+    "slug": "iceland",
+    "region": "Europe",
+    "population": 334252
+  },
+  {
+    "name": "India",
+    "alpha2code": "IN",
+    "alpha3code": "IND",
+    "coordinates": {
+      "latitude": 21,
+      "longitude": 78
+    },
+    "slug": "india",
+    "region": "Asia",
+    "population": 1324171354
+  },
+  {
+    "name": "Indonesia",
+    "alpha2code": "ID",
+    "alpha3code": "IDN",
+    "coordinates": {
+      "latitude": -0.7893,
+      "longitude": 113.9213
+    },
+    "slug": "indonesia",
+    "region": "Asia",
+    "population": 261115456
+  },
+  {
+    "name": "Iran (Islamic Republic of)",
+    "alpha2code": "IR",
+    "alpha3code": "IRN",
+    "coordinates": {
+      "latitude": 32,
+      "longitude": 53
+    },
+    "slug": "iran",
+    "region": "Asia",
+    "population": 80277428
+  },
+  {
+    "name": "Iraq",
+    "alpha2code": "IQ",
+    "alpha3code": "IRQ",
+    "coordinates": {
+      "latitude": 33,
+      "longitude": 44
+    },
+    "slug": "iraq",
+    "region": "Asia",
+    "population": 37202572
+  },
+  {
+    "name": "Ireland",
+    "alpha2code": "IE",
+    "alpha3code": "IRL",
+    "coordinates": {
+      "latitude": 53.1424,
+      "longitude": -7.6921
+    },
+    "slug": "ireland",
+    "region": "Europe",
+    "population": 4773095
+  },
+  {
+    "name": "Israel",
+    "alpha2code": "IL",
+    "alpha3code": "ISR",
+    "coordinates": {
+      "latitude": 31,
+      "longitude": 35
+    },
+    "slug": "israel",
+    "region": "Asia",
+    "population": 8547100
+  },
+  {
+    "name": "Italy",
+    "alpha2code": "IT",
+    "alpha3code": "ITA",
+    "coordinates": {
+      "latitude": 43,
+      "longitude": 12
+    },
+    "slug": "italy",
+    "region": "Europe",
+    "population": 60600590
+  },
+  {
+    "name": "Jamaica",
+    "alpha2code": "JM",
+    "alpha3code": "JAM",
+    "coordinates": {
+      "latitude": 18.1096,
+      "longitude": -77.2975
+    },
+    "slug": "jamaica",
+    "region": "Americas",
+    "population": 2881355
+  },
+  {
+    "name": "Japan",
+    "alpha2code": "JP",
+    "alpha3code": "JPN",
+    "coordinates": {
+      "latitude": 36,
+      "longitude": 138
+    },
+    "slug": "japan",
+    "region": "Asia",
+    "population": 126994511
+  },
+  {
+    "name": "Jordan",
+    "alpha2code": "JO",
+    "alpha3code": "JOR",
+    "coordinates": {
+      "latitude": 31.24,
+      "longitude": 36.51
+    },
+    "slug": "jordan",
+    "region": "Asia",
+    "population": 9455802
+  },
+  {
+    "name": "Kazakhstan",
+    "alpha2code": "KZ",
+    "alpha3code": "KAZ",
+    "coordinates": {
+      "latitude": 48.0196,
+      "longitude": 66.9237
+    },
+    "slug": "kazakhstan",
+    "region": "Asia",
+    "population": 17797032
+  },
+  {
+    "name": "Kenya",
+    "alpha2code": "KE",
+    "alpha3code": "KEN",
+    "coordinates": {
+      "latitude": -0.0236,
+      "longitude": 37.9062
+    },
+    "slug": "kenya",
+    "region": "Africa",
+    "population": 48461567
+  },
+  {
+    "name": "Kiribati",
+    "alpha2code": "KI",
+    "alpha3code": "KIR",
+    "slug": "kiribati",
+    "region": "Oceania",
+    "population": 114395
+  },
+  {
+    "name": "Korea (Democratic People's Republic of)",
+    "alpha2code": "KP",
+    "alpha3code": "PRK",
+    "slug": "korea-north",
+    "region": "Asia",
+    "population": 25368620
+  },
+  {
+    "name": "Korea, Republic of",
+    "alpha2code": "KR",
+    "alpha3code": "KOR",
+    "slug": "korea-south",
+    "region": "Asia",
+    "population": 51245707
+  },
+  {
+    "name": "Kuwait",
+    "alpha2code": "KW",
+    "alpha3code": "KWT",
+    "coordinates": {
+      "latitude": 29.5,
+      "longitude": 47.75
+    },
+    "slug": "kuwait",
+    "region": "Asia",
+    "population": 4052584
+  },
+  {
+    "name": "Kyrgyzstan",
+    "alpha2code": "KG",
+    "alpha3code": "KGZ",
+    "coordinates": {
+      "latitude": 41.2044,
+      "longitude": 74.7661
+    },
+    "slug": "kyrgyzstan",
+    "region": "Asia",
+    "population": 6082700
+  },
+  {
+    "name": "Lao People's Democratic Republic",
+    "alpha2code": "LA",
+    "alpha3code": "LAO",
+    "slug": "lao-pdr",
+    "region": "Asia",
+    "population": 6758353
+  },
+  {
+    "name": "Latvia",
+    "alpha2code": "LV",
+    "alpha3code": "LVA",
+    "coordinates": {
+      "latitude": 56.8796,
+      "longitude": 24.6032
+    },
+    "slug": "latvia",
+    "region": "Europe",
+    "population": 1960424
+  },
+  {
+    "name": "Lebanon",
+    "alpha2code": "LB",
+    "alpha3code": "LBN",
+    "coordinates": {
+      "latitude": 33.8547,
+      "longitude": 35.8623
+    },
+    "slug": "lebanon",
+    "region": "Asia",
+    "population": 6006668
+  },
+  {
+    "name": "Lesotho",
+    "alpha2code": "LS",
+    "alpha3code": "LSO",
+    "slug": "lesotho",
+    "region": "Africa",
+    "population": 2203821
+  },
+  {
+    "name": "Liberia",
+    "alpha2code": "LR",
+    "alpha3code": "LBR",
+    "coordinates": {
+      "latitude": 6.4281,
+      "longitude": -9.4295
+    },
+    "slug": "liberia",
+    "region": "Africa",
+    "population": 4613823
+  },
+  {
+    "name": "Libya",
+    "alpha2code": "LY",
+    "alpha3code": "LBY",
+    "slug": "libya",
+    "region": "Africa",
+    "population": 6293253
+  },
+  {
+    "name": "Liechtenstein",
+    "alpha2code": "LI",
+    "alpha3code": "LIE",
+    "coordinates": {
+      "latitude": 47.14,
+      "longitude": 9.55
+    },
+    "slug": "liechtenstein",
+    "region": "Europe",
+    "population": 37666
+  },
+  {
+    "name": "Lithuania",
+    "alpha2code": "LT",
+    "alpha3code": "LTU",
+    "coordinates": {
+      "latitude": 55.1694,
+      "longitude": 23.8813
+    },
+    "slug": "lithuania",
+    "region": "Europe",
+    "population": 2872298
+  },
+  {
+    "name": "Luxembourg",
+    "alpha2code": "LU",
+    "alpha3code": "LUX",
+    "coordinates": {
+      "latitude": 49.8153,
+      "longitude": 6.1296
+    },
+    "slug": "luxembourg",
+    "region": "Europe",
+    "population": 582972
+  },
+  {
+    "name": "Madagascar",
+    "alpha2code": "MG",
+    "alpha3code": "MDG",
+    "coordinates": {
+      "latitude": -18.7669,
+      "longitude": 46.8691
+    },
+    "slug": "madagascar",
+    "region": "Africa",
+    "population": 24894551
+  },
+  {
+    "name": "Malawi",
+    "alpha2code": "MW",
+    "alpha3code": "MWI",
+    "coordinates": {
+      "latitude": -13.254307999999998,
+      "longitude": 34.301525
+    },
+    "slug": "malawi",
+    "region": "Africa",
+    "population": 18091575
+  },
+  {
+    "name": "Malaysia",
+    "alpha2code": "MY",
+    "alpha3code": "MYS",
+    "coordinates": {
+      "latitude": 2.5,
+      "longitude": 112.5
+    },
+    "slug": "malaysia",
+    "region": "Asia",
+    "population": 31187265
+  },
+  {
+    "name": "Maldives",
+    "alpha2code": "MV",
+    "alpha3code": "MDV",
+    "coordinates": {
+      "latitude": 3.2028,
+      "longitude": 73.2207
+    },
+    "slug": "maldives",
+    "region": "Asia",
+    "population": 417492
+  },
+  {
+    "name": "Mali",
+    "alpha2code": "ML",
+    "alpha3code": "MLI",
+    "coordinates": {
+      "latitude": 17.570692,
+      "longitude": -3.996166000000001
+    },
+    "slug": "mali",
+    "region": "Africa",
+    "population": 17994837
+  },
+  {
+    "name": "Malta",
+    "alpha2code": "MT",
+    "alpha3code": "MLT",
+    "coordinates": {
+      "latitude": 35.9375,
+      "longitude": 14.3754
+    },
+    "slug": "malta",
+    "region": "Europe",
+    "population": 436947
+  },
+  {
+    "name": "Marshall Islands",
+    "alpha2code": "MH",
+    "alpha3code": "MHL",
+    "slug": "marshall-islands",
+    "region": "Oceania",
+    "population": 53066
+  },
+  {
+    "name": "Mauritania",
+    "alpha2code": "MR",
+    "alpha3code": "MRT",
+    "coordinates": {
+      "latitude": 21.0079,
+      "longitude": 10.9408
+    },
+    "slug": "mauritania",
+    "region": "Africa",
+    "population": 4301018
+  },
+  {
+    "name": "Mauritius",
+    "alpha2code": "MU",
+    "alpha3code": "MUS",
+    "coordinates": {
+      "latitude": -20.2,
+      "longitude": 57.5
+    },
+    "slug": "mauritius",
+    "region": "Africa",
+    "population": 1263473
+  },
+  {
+    "name": "Mexico",
+    "alpha2code": "MX",
+    "alpha3code": "MEX",
+    "coordinates": {
+      "latitude": 23.6345,
+      "longitude": -102.5528
+    },
+    "slug": "mexico",
+    "region": "Americas",
+    "population": 127540423
+  },
+  {
+    "name": "Micronesia (Federated States of)",
+    "alpha2code": "FM",
+    "alpha3code": "FSM",
+    "slug": "micronesia",
+    "region": "Oceania",
+    "population": 104937
+  },
+  {
+    "name": "Moldova, Republic of",
+    "alpha2code": "MD",
+    "alpha3code": "MDA",
+    "coordinates": {
+      "latitude": 47.4116,
+      "longitude": 28.3699
+    },
+    "slug": "moldova",
+    "region": "Europe",
+    "population": 3552000
+  },
+  {
+    "name": "Monaco",
+    "alpha2code": "MC",
+    "alpha3code": "MCO",
+    "coordinates": {
+      "latitude": 43.7333,
+      "longitude": 7.4167
+    },
+    "slug": "monaco",
+    "region": "Europe",
+    "population": 38499
+  },
+  {
+    "name": "Mongolia",
+    "alpha2code": "MN",
+    "alpha3code": "MNG",
+    "coordinates": {
+      "latitude": 46.8625,
+      "longitude": 103.8467
+    },
+    "slug": "mongolia",
+    "region": "Asia",
+    "population": 3027398
+  },
+  {
+    "name": "Montenegro",
+    "alpha2code": "ME",
+    "alpha3code": "MNE",
+    "slug": "montenegro",
+    "region": "Europe",
+    "population": 622781
+  },
+  {
+    "name": "Morocco",
+    "alpha2code": "MA",
+    "alpha3code": "MAR",
+    "coordinates": {
+      "latitude": 31.7917,
+      "longitude": -7.0926
+    },
+    "slug": "morocco",
+    "region": "Africa",
+    "population": 35276786
+  },
+  {
+    "name": "Mozambique",
+    "alpha2code": "MZ",
+    "alpha3code": "MOZ",
+    "coordinates": {
+      "latitude": -18.665695,
+      "longitude": 35.529562
+    },
+    "slug": "mozambique",
+    "region": "Africa",
+    "population": 28829476
+  },
+  {
+    "name": "Myanmar",
+    "alpha2code": "MM",
+    "alpha3code": "MMR",
+    "slug": "myanmar",
+    "region": "Asia",
+    "population": 52885223
+  },
+  {
+    "name": "Namibia",
+    "alpha2code": "NA",
+    "alpha3code": "NAM",
+    "coordinates": {
+      "latitude": -22.9576,
+      "longitude": 18.4904
+    },
+    "slug": "namibia",
+    "region": "Africa",
+    "population": 2479713
+  },
+  {
+    "name": "Nauru",
+    "alpha2code": "NR",
+    "alpha3code": "NRU",
+    "slug": "nauru",
+    "region": "Oceania",
+    "population": 13049
+  },
+  {
+    "name": "Palestine, State of",
+    "alpha2code": "PS",
+    "alpha3code": "PSE",
+    "slug": "palestine",
+    "region": "Asia",
+    "population": 4551566
+  },
+  {
+    "name": "Nepal",
+    "alpha2code": "NP",
+    "alpha3code": "NPL",
+    "coordinates": {
+      "latitude": 28.1667,
+      "longitude": 84.25
+    },
+    "slug": "nepal",
+    "region": "Asia",
+    "population": 28982771
+  },
+  {
+    "name": "Netherlands",
+    "alpha2code": "NL",
+    "alpha3code": "NLD",
+    "coordinates": {
+      "latitude": 12.5186,
+      "longitude": -70.0358
+    },
+    "slug": "netherlands",
+    "region": "Europe",
+    "population": 17018408
+  },
+  {
+    "name": "New Zealand",
+    "alpha2code": "NZ",
+    "alpha3code": "NZL",
+    "coordinates": {
+      "latitude": -40.9006,
+      "longitude": 174.886
+    },
+    "slug": "new-zealand",
+    "region": "Oceania",
+    "population": 4692700
+  },
+  {
+    "name": "Nicaragua",
+    "alpha2code": "NI",
+    "alpha3code": "NIC",
+    "coordinates": {
+      "latitude": 12.8654,
+      "longitude": -85.2072
+    },
+    "slug": "nicaragua",
+    "region": "Americas",
+    "population": 6149928
+  },
+  {
+    "name": "Niger",
+    "alpha2code": "NE",
+    "alpha3code": "NER",
+    "coordinates": {
+      "latitude": 17.6078,
+      "longitude": 8.0817
+    },
+    "slug": "niger",
+    "region": "Africa",
+    "population": 20672987
+  },
+  {
+    "name": "Nigeria",
+    "alpha2code": "NG",
+    "alpha3code": "NGA",
+    "coordinates": {
+      "latitude": 9.082,
+      "longitude": 8.6753
+    },
+    "slug": "nigeria",
+    "region": "Africa",
+    "population": 185989640
+  },
+  {
+    "name": "North Macedonia",
+    "alpha2code": "MK",
+    "alpha3code": "MKD",
+    "coordinates": {
+      "latitude": 41.6086,
+      "longitude": 21.7453
+    },
+    "slug": "macedonia",
+    "region": "Europe",
+    "population": 2081206
+  },
+  {
+    "name": "Norway",
+    "alpha2code": "NO",
+    "alpha3code": "NOR",
+    "coordinates": {
+      "latitude": 60.472,
+      "longitude": 8.4689
+    },
+    "slug": "norway",
+    "region": "Europe",
+    "population": 5232929
+  },
+  {
+    "name": "Oman",
+    "alpha2code": "OM",
+    "alpha3code": "OMN",
+    "coordinates": {
+      "latitude": 21,
+      "longitude": 57
+    },
+    "slug": "oman",
+    "region": "Asia",
+    "population": 4424762
+  },
+  {
+    "name": "Pakistan",
+    "alpha2code": "PK",
+    "alpha3code": "PAK",
+    "coordinates": {
+      "latitude": 30.3753,
+      "longitude": 69.3451
+    },
+    "slug": "pakistan",
+    "region": "Asia",
+    "population": 193203476
+  },
+  {
+    "name": "Palau",
+    "alpha2code": "PW",
+    "alpha3code": "PLW",
+    "slug": "palau",
+    "region": "Oceania",
+    "population": 21503
+  },
+  {
+    "name": "Panama",
+    "alpha2code": "PA",
+    "alpha3code": "PAN",
+    "coordinates": {
+      "latitude": 8.538,
+      "longitude": -80.7821
+    },
+    "slug": "panama",
+    "region": "Americas",
+    "population": 4034119
+  },
+  {
+    "name": "Papua New Guinea",
+    "alpha2code": "PG",
+    "alpha3code": "PNG",
+    "coordinates": {
+      "latitude": -6.315,
+      "longitude": 143.9555
+    },
+    "slug": "papua-new-guinea",
+    "region": "Oceania",
+    "population": 8084991
+  },
+  {
+    "name": "Paraguay",
+    "alpha2code": "PY",
+    "alpha3code": "PRY",
+    "coordinates": {
+      "latitude": -23.4425,
+      "longitude": -58.4438
+    },
+    "slug": "paraguay",
+    "region": "Americas",
+    "population": 6725308
+  },
+  {
+    "name": "Peru",
+    "alpha2code": "PE",
+    "alpha3code": "PER",
+    "coordinates": {
+      "latitude": -9.19,
+      "longitude": -75.0152
+    },
+    "slug": "peru",
+    "region": "Americas",
+    "population": 31773839
+  },
+  {
+    "name": "Philippines",
+    "alpha2code": "PH",
+    "alpha3code": "PHL",
+    "coordinates": {
+      "latitude": 13,
+      "longitude": 122
+    },
+    "slug": "philippines",
+    "region": "Asia",
+    "population": 103320222
+  },
+  {
+    "name": "Poland",
+    "alpha2code": "PL",
+    "alpha3code": "POL",
+    "coordinates": {
+      "latitude": 51.9194,
+      "longitude": 19.1451
+    },
+    "slug": "poland",
+    "region": "Europe",
+    "population": 37948016
+  },
+  {
+    "name": "Portugal",
+    "alpha2code": "PT",
+    "alpha3code": "PRT",
+    "coordinates": {
+      "latitude": 39.3999,
+      "longitude": -8.2245
+    },
+    "slug": "portugal",
+    "region": "Europe",
+    "population": 10324611
+  },
+  {
+    "name": "Qatar",
+    "alpha2code": "QA",
+    "alpha3code": "QAT",
+    "coordinates": {
+      "latitude": 25.3548,
+      "longitude": 51.1839
+    },
+    "slug": "qatar",
+    "region": "Asia",
+    "population": 2569804
+  },
+  {
+    "name": "Romania",
+    "alpha2code": "RO",
+    "alpha3code": "ROU",
+    "coordinates": {
+      "latitude": 45.9432,
+      "longitude": 24.9668
+    },
+    "slug": "romania",
+    "region": "Europe",
+    "population": 19705301
+  },
+  {
+    "name": "Russian Federation",
+    "alpha2code": "RU",
+    "alpha3code": "RUS",
+    "slug": "russia",
+    "region": "Europe",
+    "population": 144342396
+  },
+  {
+    "name": "Rwanda",
+    "alpha2code": "RW",
+    "alpha3code": "RWA",
+    "coordinates": {
+      "latitude": -1.9403,
+      "longitude": 29.8739
+    },
+    "slug": "rwanda",
+    "region": "Africa",
+    "population": 11917508
+  },
+  {
+    "name": "Saint Kitts and Nevis",
+    "alpha2code": "KN",
+    "alpha3code": "KNA",
+    "coordinates": {
+      "latitude": 17.357822,
+      "longitude": -62.782998
+    },
+    "slug": "saint-kitts-and-nevis",
+    "region": "Americas",
+    "population": 54821
+  },
+  {
+    "name": "Saint Lucia",
+    "alpha2code": "LC",
+    "alpha3code": "LCA",
+    "coordinates": {
+      "latitude": 13.9094,
+      "longitude": -60.9789
+    },
+    "slug": "saint-lucia",
+    "region": "Americas",
+    "population": 178015
+  },
+  {
+    "name": "Saint Vincent and the Grenadines",
+    "alpha2code": "VC",
+    "alpha3code": "VCT",
+    "coordinates": {
+      "latitude": 12.9843,
+      "longitude": -61.2872
+    },
+    "slug": "saint-vincent-and-the-grenadines",
+    "region": "Americas",
+    "population": 109643
+  },
+  {
+    "name": "Samoa",
+    "alpha2code": "WS",
+    "alpha3code": "WSM",
+    "slug": "samoa",
+    "region": "Oceania",
+    "population": 195125
+  },
+  {
+    "name": "San Marino",
+    "alpha2code": "SM",
+    "alpha3code": "SMR",
+    "coordinates": {
+      "latitude": 43.9424,
+      "longitude": 12.4578
+    },
+    "slug": "san-marino",
+    "region": "Europe",
+    "population": 33203
+  },
+  {
+    "name": "Sao Tome and Principe",
+    "alpha2code": "ST",
+    "alpha3code": "STP",
+    "coordinates": {
+      "latitude": 0.18636,
+      "longitude": 6.613081
+    },
+    "slug": "sao-tome-and-principe",
+    "region": "Africa",
+    "population": 199910
+  },
+  {
+    "name": "Saudi Arabia",
+    "alpha2code": "SA",
+    "alpha3code": "SAU",
+    "coordinates": {
+      "latitude": 24,
+      "longitude": 45
+    },
+    "slug": "saudi-arabia",
+    "region": "Asia",
+    "population": 32275687
+  },
+  {
+    "name": "Senegal",
+    "alpha2code": "SN",
+    "alpha3code": "SEN",
+    "coordinates": {
+      "latitude": 14.4974,
+      "longitude": -14.4524
+    },
+    "slug": "senegal",
+    "region": "Africa",
+    "population": 15411614
+  },
+  {
+    "name": "Serbia",
+    "alpha2code": "RS",
+    "alpha3code": "SRB",
+    "slug": "serbia",
+    "region": "Europe",
+    "population": 7057412
+  },
+  {
+    "name": "Seychelles",
+    "alpha2code": "SC",
+    "alpha3code": "SYC",
+    "coordinates": {
+      "latitude": -4.6796,
+      "longitude": 55.492
+    },
+    "slug": "seychelles",
+    "region": "Africa",
+    "population": 94677
+  },
+  {
+    "name": "Sierra Leone",
+    "alpha2code": "SL",
+    "alpha3code": "SLE",
+    "coordinates": {
+      "latitude": 8.460555000000001,
+      "longitude": -11.779889
+    },
+    "slug": "sierra-leone",
+    "region": "Africa",
+    "population": 7396190
+  },
+  {
+    "name": "Singapore",
+    "alpha2code": "SG",
+    "alpha3code": "SGP",
+    "coordinates": {
+      "latitude": 1.2833,
+      "longitude": 103.8333
+    },
+    "slug": "singapore",
+    "region": "Asia",
+    "population": 5607283
+  },
+  {
+    "name": "Slovakia",
+    "alpha2code": "SK",
+    "alpha3code": "SVK",
+    "coordinates": {
+      "latitude": 48.669,
+      "longitude": 19.699
+    },
+    "slug": "slovakia",
+    "region": "Europe",
+    "population": 5428704
+  },
+  {
+    "name": "Slovenia",
+    "alpha2code": "SI",
+    "alpha3code": "SVN",
+    "coordinates": {
+      "latitude": 46.1512,
+      "longitude": 14.9955
+    },
+    "slug": "slovenia",
+    "region": "Europe",
+    "population": 2064845
+  },
+  {
+    "name": "Solomon Islands",
+    "alpha2code": "SB",
+    "alpha3code": "SLB",
+    "slug": "solomon-islands",
+    "region": "Oceania",
+    "population": 599419
+  },
+  {
+    "name": "Somalia",
+    "alpha2code": "SO",
+    "alpha3code": "SOM",
+    "coordinates": {
+      "latitude": 5.1521,
+      "longitude": 46.1996
+    },
+    "slug": "somalia",
+    "region": "Africa",
+    "population": 14317996
+  },
+  {
+    "name": "South Africa",
+    "alpha2code": "ZA",
+    "alpha3code": "ZAF",
+    "coordinates": {
+      "latitude": -30.5595,
+      "longitude": 22.9375
+    },
+    "slug": "south-africa",
+    "region": "Africa",
+    "population": 55908865
+  },
+  {
+    "name": "South Sudan",
+    "alpha2code": "SS",
+    "alpha3code": "SSD",
+    "coordinates": {
+      "latitude": 6.877000000000002,
+      "longitude": 31.307
+    },
+    "slug": "south-sudan",
+    "region": "Africa",
+    "population": 12230730
+  },
+  {
+    "name": "Spain",
+    "alpha2code": "ES",
+    "alpha3code": "ESP",
+    "coordinates": {
+      "latitude": 40,
+      "longitude": -4
+    },
+    "slug": "spain",
+    "region": "Europe",
+    "population": 46443959
+  },
+  {
+    "name": "Sri Lanka",
+    "alpha2code": "LK",
+    "alpha3code": "LKA",
+    "slug": "sri-lanka",
+    "region": "Asia",
+    "population": 21203000
+  },
+  {
+    "name": "Sudan",
+    "alpha2code": "SD",
+    "alpha3code": "SDN",
+    "coordinates": {
+      "latitude": 12.8628,
+      "longitude": 30.2176
+    },
+    "slug": "sudan",
+    "region": "Africa",
+    "population": 39578828
+  },
+  {
+    "name": "Suriname",
+    "alpha2code": "SR",
+    "alpha3code": "SUR",
+    "coordinates": {
+      "latitude": 3.9193,
+      "longitude": -56.0278
+    },
+    "slug": "suriname",
+    "region": "Americas",
+    "population": 558368
+  },
+  {
+    "name": "Sweden",
+    "alpha2code": "SE",
+    "alpha3code": "SWE",
+    "coordinates": {
+      "latitude": 63,
+      "longitude": 16
+    },
+    "slug": "sweden",
+    "region": "Europe",
+    "population": 9903122
+  },
+  {
+    "name": "Switzerland",
+    "alpha2code": "CH",
+    "alpha3code": "CHE",
+    "coordinates": {
+      "latitude": 46.8182,
+      "longitude": 8.2275
+    },
+    "slug": "switzerland",
+    "region": "Europe",
+    "population": 8372098
+  },
+  {
+    "name": "Syrian Arab Republic",
+    "alpha2code": "SY",
+    "alpha3code": "SYR",
+    "slug": "syria",
+    "region": "Asia",
+    "population": 18430453
+  },
+  {
+    "name": "Tajikistan",
+    "alpha2code": "TJ",
+    "alpha3code": "TJK",
+    "slug": "tajikistan",
+    "region": "Asia",
+    "population": 8734951
+  },
+  {
+    "name": "Tanzania, United Republic of",
+    "alpha2code": "TZ",
+    "alpha3code": "TZA",
+    "coordinates": {
+      "latitude": -6.369,
+      "longitude": 34.8888
+    },
+    "slug": "tanzania",
+    "region": "Africa",
+    "population": 55572201
+  },
+  {
+    "name": "Thailand",
+    "alpha2code": "TH",
+    "alpha3code": "THA",
+    "coordinates": {
+      "latitude": 15,
+      "longitude": 101
+    },
+    "slug": "thailand",
+    "region": "Asia",
+    "population": 68863514
+  },
+  {
+    "name": "Timor-Leste",
+    "alpha2code": "TL",
+    "alpha3code": "TLS",
+    "slug": "timor-leste",
+    "region": "Asia",
+    "population": 1268671
+  },
+  {
+    "name": "Togo",
+    "alpha2code": "TG",
+    "alpha3code": "TGO",
+    "coordinates": {
+      "latitude": 8.6195,
+      "longitude": 0.8248
+    },
+    "slug": "togo",
+    "region": "Africa",
+    "population": 7606374
+  },
+  {
+    "name": "Tonga",
+    "alpha2code": "TO",
+    "alpha3code": "TON",
+    "slug": "tonga",
+    "region": "Oceania",
+    "population": 107122
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "alpha2code": "TT",
+    "alpha3code": "TTO",
+    "coordinates": {
+      "latitude": 10.6918,
+      "longitude": -61.2225
+    },
+    "slug": "trinidad-and-tobago",
+    "region": "Americas",
+    "population": 1364962
+  },
+  {
+    "name": "Tunisia",
+    "alpha2code": "TN",
+    "alpha3code": "TUN",
+    "coordinates": {
+      "latitude": 34,
+      "longitude": 9
+    },
+    "slug": "tunisia",
+    "region": "Africa",
+    "population": 11403248
+  },
+  {
+    "name": "Turkey",
+    "alpha2code": "TR",
+    "alpha3code": "TUR",
+    "coordinates": {
+      "latitude": 38.9637,
+      "longitude": 35.2433
+    },
+    "slug": "turkey",
+    "region": "Asia",
+    "population": 79512426
+  },
+  {
+    "name": "Turkmenistan",
+    "alpha2code": "TM",
+    "alpha3code": "TKM",
+    "slug": "turkmenistan",
+    "region": "Asia",
+    "population": 5662544
+  },
+  {
+    "name": "Tuvalu",
+    "alpha2code": "TV",
+    "alpha3code": "TUV",
+    "slug": "tuvalu",
+    "region": "Oceania",
+    "population": 11097
+  },
+  {
+    "name": "Uganda",
+    "alpha2code": "UG",
+    "alpha3code": "UGA",
+    "coordinates": {
+      "latitude": 1,
+      "longitude": 32
+    },
+    "slug": "uganda",
+    "region": "Africa",
+    "population": 41487965
+  },
+  {
+    "name": "Ukraine",
+    "alpha2code": "UA",
+    "alpha3code": "UKR",
+    "coordinates": {
+      "latitude": 48.3794,
+      "longitude": 31.1656
+    },
+    "slug": "ukraine",
+    "region": "Europe",
+    "population": 45004645
+  },
+  {
+    "name": "United Arab Emirates",
+    "alpha2code": "AE",
+    "alpha3code": "ARE",
+    "coordinates": {
+      "latitude": 24,
+      "longitude": 54
+    },
+    "slug": "united-arab-emirates",
+    "region": "Asia",
+    "population": 9269612
+  },
+  {
+    "name": "United Kingdom of Great Britain and Northern Ireland",
+    "alpha2code": "GB",
+    "alpha3code": "GBR",
+    "coordinates": {
+      "latitude": 32.3078,
+      "longitude": -64.7505
+    },
+    "slug": "united-kingdom",
+    "region": "Europe",
+    "population": 65637239
+  },
+  {
+    "name": "United States of America",
+    "alpha2code": "US",
+    "alpha3code": "USA",
+    "coordinates": {
+      "latitude": 37.0902,
+      "longitude": -95.7129
+    },
+    "slug": "united-states",
+    "region": "Americas",
+    "population": 323127513
+  },
+  {
+    "name": "Uruguay",
+    "alpha2code": "UY",
+    "alpha3code": "URY",
+    "coordinates": {
+      "latitude": -32.5228,
+      "longitude": -55.7658
+    },
+    "slug": "uruguay",
+    "region": "Americas",
+    "population": 3444006
+  },
+  {
+    "name": "Uzbekistan",
+    "alpha2code": "UZ",
+    "alpha3code": "UZB",
+    "coordinates": {
+      "latitude": 41.3775,
+      "longitude": 64.5853
+    },
+    "slug": "uzbekistan",
+    "region": "Asia",
+    "population": 31848200
+  },
+  {
+    "name": "Vanuatu",
+    "alpha2code": "VU",
+    "alpha3code": "VUT",
+    "slug": "vanuatu",
+    "region": "Oceania",
+    "population": 270402
+  },
+  {
+    "name": "Venezuela (Bolivarian Republic of)",
+    "alpha2code": "VE",
+    "alpha3code": "VEN",
+    "slug": "venezuela",
+    "region": "Americas",
+    "population": 31568179
+  },
+  {
+    "name": "Viet Nam",
+    "alpha2code": "VN",
+    "alpha3code": "VNM",
+    "coordinates": {
+      "latitude": 16,
+      "longitude": 108
+    },
+    "slug": "vietnam",
+    "region": "Asia",
+    "population": 92701100
+  },
+  {
+    "name": "Yemen",
+    "alpha2code": "YE",
+    "alpha3code": "YEM",
+    "coordinates": {
+      "latitude": 15.552727,
+      "longitude": 48.516388
+    },
+    "slug": "yemen",
+    "region": "Asia",
+    "population": 27584213
+  },
+  {
+    "name": "Zambia",
+    "alpha2code": "ZM",
+    "alpha3code": "ZMB",
+    "coordinates": {
+      "latitude": -15.4167,
+      "longitude": 28.2833
+    },
+    "slug": "zambia",
+    "region": "Africa",
+    "population": 16591390
+  },
+  {
+    "name": "Zimbabwe",
+    "alpha2code": "ZW",
+    "alpha3code": "ZWE",
+    "coordinates": {
+      "latitude": -20,
+      "longitude": 30
+    },
+    "slug": "zimbabwe",
+    "region": "Africa",
+    "population": 16150362
   }
 ]

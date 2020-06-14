@@ -31,8 +31,7 @@ export class CovidTableComponent implements OnInit {
     this.tableDataService.getData([])
       .pipe(take(1))
       .subscribe((deathsPerCountry: any) => {
-
-        console.log(deathsPerCountry); // TODO correct format
+        // console.log(deathsPerCountry);
 
         this.dataSource = new MatTableDataSource(deathsPerCountry);
         this.dataSource.sort = this.sort;
@@ -40,39 +39,4 @@ export class CovidTableComponent implements OnInit {
 
   }
 
-  /**
-   * Only for development, this methode is used to merged daata sources
-   * and create new JSON data.
-   */
-  craftMyData() {
-    this.populations$ = this.countryService.getCountries();
-    this.deaths$ = this.tableDataService.getData([]);
-
-    forkJoin(this.populations$, this.deaths$).subscribe(([population, deaths]) => {
-
-      console.log(population);
-      console.log(deaths);
-      const testJson = [];
-      population.forEach(popStat => {
-
-        const matchingCountry = deaths; //.filter(deathsArray => deathsArray.country === popStat.country);
-
-        console.log(popStat);
-        if (matchingCountry[0]) {
-          testJson.push({
-            countryCode: matchingCountry[0].country_code,
-            name: matchingCountry[0].country,
-            population: popStat.population,
-            coordinates: matchingCountry[0].coordinates
-          });
-        }
-
-      });
-      console.log(testJson);
-
-      const obj = JSON.stringify(testJson);
-      console.log(obj);
-    });
-
-  }
 }

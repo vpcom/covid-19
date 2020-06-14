@@ -18,7 +18,7 @@ export class GraphDataService {
   ) { }
 
   public getData(countryList: any[] = undefined): Observable<{ x: any[]; y: any; }> {
-    console.log('graphDataService.getData')
+    // console.log('graphDataService.getData')
 
     let countries$ = this.countryService.getCountries();
     let covidData$ = this.covidDataService.getCovidData();
@@ -32,7 +32,6 @@ export class GraphDataService {
         const x = [];
         const y = [];
         for (const dateKey in covidData[this.countryFilter]) {
-          console.log(`${dateKey}: ${covidData[this.countryFilter][dateKey]}`);
           x.push(dateKey);
           y.push(covidData[this.countryFilter][dateKey].deaths);
         }
