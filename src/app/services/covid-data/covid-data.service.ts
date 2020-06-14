@@ -22,34 +22,13 @@ export class CovidDataService {
   ) { }
 
 
-  // public getCovidData(): Observable<any> {
-  //   console.log('getCovidData');
-    
-  //   return this.localStorageService.getCache().pipe(
-  //     // tap(data => { console.log(data) }),
-	//     map(cachedData => {
-  //       console.log('getCovidData cachedData', cachedData);
-  //       if (cachedData === null || cachedData.length === 0) {
-  //         this.getDataFromEndpoint().subscribe(rawData => {
-  //           const transformedData = this.transformCsvToTypedArray(rawData);
-  //           this.localStorageService.setCache(transformedData);
-  //           console.log(transformedData);
-  //           return transformedData;
-  //         });
-  //       } else {
-  //         return cachedData;
-  //       }
-  //     })
-  //   );
-  // }
-
   public getCovidData(): Observable<any> {
-    console.log('getCovidData');
+    // console.log('getCovidData');
     
     return this.localStorageService.getCache().pipe(
       // tap(data => { console.log(data) }),
 	    map(cachedData => {
-        console.log('getCovidData cachedData', cachedData);
+        // console.log('getCovidData cachedData', cachedData);
         if (cachedData !== null && cachedData.length > 0) {
           return cachedData;
         }
@@ -59,7 +38,6 @@ export class CovidDataService {
           map(rawData => {
             const transformedData = this.transformCsvToTypedArray(rawData);
             this.localStorageService.setCache(transformedData);
-            console.log(transformedData);
             return transformedData;
           })
       )})
