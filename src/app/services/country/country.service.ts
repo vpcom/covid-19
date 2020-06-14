@@ -9,7 +9,7 @@ import { Country } from '../../types/country.d';
 })
 export class CountryService {
 
-  populationData = '/assets/data/countries.json';
+  populationData = './assets/data/countries.json';
 
   constructor(private http: HttpClient) { }
 
