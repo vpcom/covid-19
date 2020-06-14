@@ -7,6 +7,10 @@ The aim of this app is to present COVID data and allow the user to select what d
 
 More details about data source will come and more functionalities to explore and compare the data.
 
+## Demo
+
+[COVID-19 explorer](http://vincentperrin.com/covid/).
+
 ## Build
 
 <code>ng serve</code>
