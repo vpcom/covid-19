@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
+import { map, switchMap } from 'rxjs/operators';
 import { Case } from 'src/app/types/covid19api';
 import { LocalStorageService } from '../local-storage/local-storage.service';
 
@@ -22,23 +22,47 @@ export class CovidDataService {
   ) { }
 
 
+  // public getCovidData(): Observable<any> {
+  //   console.log('getCovidData');
+    
+  //   return this.localStorageService.getCache().pipe(
+  //     // tap(data => { console.log(data) }),
+	//     map(cachedData => {
+  //       console.log('getCovidData cachedData', cachedData);
+  //       if (cachedData === null || cachedData.length === 0) {
+  //         this.getDataFromEndpoint().subscribe(rawData => {
+  //           const transformedData = this.transformCsvToTypedArray(rawData);
+  //           this.localStorageService.setCache(transformedData);
+  //           console.log(transformedData);
+  //           return transformedData;
+  //         });
+  //       } else {
+  //         return cachedData;
+  //       }
+  //     })
+  //   );
+  // }
+
   public getCovidData(): Observable<any> {
-    // console.log('getCovidData');
+    console.log('getCovidData');
     
     return this.localStorageService.getCache().pipe(
       // tap(data => { console.log(data) }),
 	    map(cachedData => {
-        // console.log('getCovidData cachedData', cachedData);
-        if (cachedData === null || cachedData.length === 0) {
-          this.getDataFromEndpoint().subscribe(rawData => {
-            const transformedData = this.transformCsvToTypedArray(rawData);
-            this.localStorageService.setCache(transformedData);
-            return transformedData;
-          });
-        } else {
+        console.log('getCovidData cachedData', cachedData);
+        if (cachedData !== null && cachedData.length > 0) {
           return cachedData;
         }
-      })
+      }),
+      switchMap(selectedItems => {
+        return this.getDataFromEndpoint().pipe(
+          map(rawData => {
+            const transformedData = this.transformCsvToTypedArray(rawData);
+            this.localStorageService.setCache(transformedData);
+            console.log(transformedData);
+            return transformedData;
+          })
+      )})
     );
   }
 
