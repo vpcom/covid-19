@@ -1,10 +1,11 @@
 # covid-19
-COVID-19 statistics per inhabitants.
+COVID-19 data Explorer
 
-The aim is to present COVID data per inhabitants with sortable arrays.
-Code should be typed to make code reusable.
+**In progress**
 
-**in progress**
+The aim of this app is to present COVID data and allow the user to select what data is interesting to them and how it is better to be seen.
+
+More details about data source will come and more functionalities to explore and compare the data.
 
 ## Conventions
 Commit messages:
