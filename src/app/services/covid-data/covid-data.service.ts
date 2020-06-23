@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { map, switchMap } from 'rxjs/operators';
+import { map, switchMap, tap } from 'rxjs/operators';
 import { Case } from 'src/app/types/covid19api';
 import { LocalStorageService } from '../local-storage/local-storage.service';
 
@@ -14,7 +14,7 @@ export class CovidDataService {
   fullLocalData = './assets/data/Bing-COVID19-Data.csv';
   partialLocalData = './assets/data/Bing-COVID19-Data-reduced.csv';
 
-  cachedEndpointData: any;
+  cachedData: any;
 
   constructor(
     private http: HttpClient,
@@ -23,36 +23,29 @@ export class CovidDataService {
 
 
   public getCovidData(): Observable<any> {
-    // console.log('getCovidData');
-    
     return this.localStorageService.getCache().pipe(
       // tap(data => { console.log(data) }),
-	    map(cachedData => {
-        // console.log('getCovidData cachedData', cachedData);
-        if (cachedData !== null && cachedData.length > 0) {
-          return cachedData;
+      map(cachedData => cachedData),
+      switchMap(cachedData => {
+        if (cachedData !== null) {
+          return of(cachedData);
+        } else {
+          return this.getDataFromEndpoint().pipe(
+            map(rawData => {
+              const transformedData = this.transformCsvToTypedArray(rawData);
+              this.localStorageService.setCache(transformedData);
+              return transformedData;
+            }))
         }
-      }),
-      switchMap(selectedItems => {
-        return this.getDataFromEndpoint().pipe(
-          map(rawData => {
-            const transformedData = this.transformCsvToTypedArray(rawData);
-            this.localStorageService.setCache(transformedData);
-            return transformedData;
-          })
-      )})
+      })
     );
   }
 
   private getDataFromEndpoint(): Observable<any> {
-    // console.log('getDataFromEndpoint');
-
-    return this.http.get(this.fullLocalData, {responseType: 'text'});
+    return this.http.get(this.urlBingEndpoint, {responseType: 'text'});
   }
 
   private transformCsvToTypedArray(data): any {
-    // console.log('transformCsvToTypedArray');
-
     var csvData = {};
     var jsonObject = data.split(/\r?\n|\r/);
     let aCase: Case;
@@ -86,7 +79,7 @@ export class CovidDataService {
       csvData[aCase.countryCode][aCase.date] = aCase;
     }
     
-    console.log(csvData);
+    // console.log(csvData);
 
     return csvData;
   }
