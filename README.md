@@ -1,7 +1,7 @@
 # covid-19
 COVID-19 data Explorer
 
-**In progress**
+**Work in progress**
 
 The aim of this app is to present COVID data and allow the user to select what data is interesting to them and how it is better to be seen.
 
