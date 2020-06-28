@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>Select a country</h1>
+  <div mat-dialog-content>
+
+    <ul>
+      <li
+        *ngFor="let country of data.countries"
+        class="country-item">
+        <button mat-button (click)="selectCountry(country.alpha3Code)">{{ country.name }}</button>
+        
+      </li>
+    </ul>
+
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancel</button>
+    <button mat-button [mat-dialog-close]="selectedCountry" cdkFocusInitial>Ok</button>
+  </div>
+
+  <div>
+</div>
