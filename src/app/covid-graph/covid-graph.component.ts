@@ -1,10 +1,20 @@
-import { GraphDataService } from './../services/graphData/graph-data.service';
+import { GraphDataService, defaultCountryAlpha3Code } from './../services/graphData/graph-data.service';
 import { Component, OnInit } from '@angular/core';
 import { take } from 'rxjs/operators';
+import { map, switchMap, tap } from 'rxjs/operators';
 import { CovidDataService } from '../services/covid-data/covid-data.service';
-import { Observable } from 'rxjs';
+import { Observable, pipe } from 'rxjs';
 import { LocalStorageService } from '../services/local-storage/local-storage.service';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { SelectCountryDialogComponent } from '../select-country-dialog/select-country-dialog.component';
+import { CountryService } from '../services/country/country.service';
+import { Country } from '../types/country';
 declare let Plotly: any ;
+
+export interface countryItem {
+  name: string,
+  alpha3Code: string
+}
 
 @Component({
   selector: 'app-covid-graph',
@@ -17,19 +27,28 @@ export class CovidGraphComponent implements OnInit {
   layout;
   traceCH;
   config;
+  currentCountries: countryItem[];
+  selectedCountry: Country;
   
   constructor(
     private graphDataService: GraphDataService,
-    private localStorageService: LocalStorageService
+    private localStorageService: LocalStorageService,
+    private countryService: CountryService,
+    public dialog: MatDialog
   ) { }
 
   ngOnInit(): void {
-    this.initGraph();
-    this.loadGraph();
+    this.countryService.getCountryWithAlpha3Code(defaultCountryAlpha3Code)
+      .subscribe(country => {
+        this.selectedCountry = country;
+        this.initGraph(country);
+        this.loadGraph(this.selectedCountry);
+      }
+    );
   }
 
-  loadGraph(): void {
-    this.graphDataService.getData()
+  loadGraph(selectedCountry): void {
+    this.graphDataService.getData(selectedCountry)
       .pipe(take(1))
       .subscribe((deathsPerCountry: any) => {
         // console.log(deathsPerCountry, [deathsPerCountry['x'], deathsPerCountry['y']]);
@@ -46,7 +65,12 @@ export class CovidGraphComponent implements OnInit {
     );
   }
 
-  initGraph(): void {
+  initGraph(country: Country): void {
+    if (!country) {
+      console.warn('initGraph: No country provided.')
+      return;
+    }
+
     this.graphElement = document.getElementById('covid-graph');
 
     this.config = {
@@ -57,7 +81,7 @@ export class CovidGraphComponent implements OnInit {
     this.traceCH = {
       x: undefined,
       y: undefined,
-      name: 'Switzerland',
+      name: country.name,
       marker: {color: 'red'},
       type: 'scatter',
       fixedrange: true,
@@ -105,7 +129,25 @@ export class CovidGraphComponent implements OnInit {
 
   refresh(): void {
     this.localStorageService.emptyCache();
-    this.loadGraph();
+    this.loadGraph(this.selectedCountry);
+  }
+
+  openDialog(): void {
+    let dialogRef;
+
+    this.countryService.getCountries().subscribe((countries: any[]) => {
+      dialogRef = this.dialog.open(SelectCountryDialogComponent, {
+        data: {
+          countries: countries,
+          currentCountries: this.currentCountries}
+      });
+
+      dialogRef.afterClosed().subscribe(result => {
+        this.selectedCountry = result;
+        this.loadGraph(this.selectedCountry);
+      });
+    });
+
   }
 
 }

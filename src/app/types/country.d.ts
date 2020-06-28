@@ -2,8 +2,8 @@
 export interface Country {
   slug: string; // Understandable identifier
   name: string;
-  alpha2code: string;
-  alpha3code: string;
+  alpha2Code: string;
+  alpha3Code: string;
   population: number;
   region: string;
   coordinates: Coordinates;

@@ -3,7 +3,7 @@ import { Observable, of } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { map, switchMap, tap } from 'rxjs/operators';
 import { Case } from 'src/app/types/covid19api';
-import { LocalStorageService } from '../local-storage/local-storage.service';
+import { LocalStorageService, CaheKey } from '../local-storage/local-storage.service';
 
 @Injectable({
   providedIn: 'root'
@@ -23,7 +23,7 @@ export class CovidDataService {
 
 
   public getCovidData(): Observable<any> {
-    return this.localStorageService.getCache().pipe(
+    return this.localStorageService.getCache(CaheKey.COVID_DATA).pipe(
       // tap(data => { console.log(data) }),
       map(cachedData => cachedData),
       switchMap(cachedData => {
@@ -33,7 +33,7 @@ export class CovidDataService {
           return this.getDataFromEndpoint().pipe(
             map(rawData => {
               const transformedData = this.transformCsvToTypedArray(rawData);
-              this.localStorageService.setCache(transformedData);
+              this.localStorageService.setCache(CaheKey.COVID_DATA, transformedData);
               return transformedData;
             }))
         }

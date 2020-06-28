@@ -33,7 +33,7 @@ export class TableDataService {
         countries.forEach(popStat => {
           // console.log(popStat);
 
-          const matchingCountry = deaths[popStat.alpha3code];
+          const matchingCountry = deaths[popStat.alpha3Code];
           // console.log(matchingCountry);
 
           // TODO Have a global date

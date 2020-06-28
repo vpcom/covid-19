@@ -11,6 +11,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { IntroComponent } from './intro/intro.component';
 import { MainComponent } from './main/main.component';
 import { CovidGraphComponent } from './covid-graph/covid-graph.component';
+import { SelectCountryDialogComponent } from './select-country-dialog/select-country-dialog.component';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { OVERLAY_PROVIDERS } from '@angular/cdk/overlay';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,8 @@ import { CovidGraphComponent } from './covid-graph/covid-graph.component';
     CovidTableComponent,
     IntroComponent,
     MainComponent,
-    CovidGraphComponent
+    CovidGraphComponent,
+    SelectCountryDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -26,9 +31,14 @@ import { CovidGraphComponent } from './covid-graph/covid-graph.component';
     NoopAnimationsModule,
     MatTableModule,
     MatSortModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule,
+    MatButtonModule
   ],
-  providers: [],
+  providers: [
+    MatDialog,
+    OVERLAY_PROVIDERS
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

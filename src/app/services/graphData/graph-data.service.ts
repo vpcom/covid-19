@@ -4,23 +4,25 @@ import { CountryService } from '../country/country.service';
 import { CountryData } from '../../types/main';
 import { CovidDataService } from '../covid-data/covid-data.service';
 import { map } from 'rxjs/operators';
+import { Country } from 'src/app/types/country';
+
+export const defaultCountryAlpha3Code = 'CHE';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GraphDataService {
 
-  countryFilter = 'CHE';
 
   constructor(
     private countryService: CountryService,
     private covidDataService: CovidDataService
   ) { }
 
-  public getData(countryList: any[] = undefined): Observable<{ x: any[]; y: any; }> {
-    // console.log('graphDataService.getData')
+  public getData(country: Country = undefined): Observable<{ x: any[]; y: any; }> {
+    // console.log('graphDataService.getData', country)
 
-    let countries$ = this.countryService.getCountries();
+    let countries$ = this.countryService.getCountryWithAlpha3Code(country.alpha3Code);
     let covidData$ = this.covidDataService.getCovidData();
 
 
@@ -31,9 +33,9 @@ export class GraphDataService {
 
         const x = [];
         const y = [];
-        for (const dateKey in covidData[this.countryFilter]) {
+        for (const dateKey in covidData[country.alpha3Code]) {
           x.push(dateKey);
-          y.push(covidData[this.countryFilter][dateKey].deaths);
+          y.push(covidData[country.alpha3Code][dateKey].deaths);
         }
 
         // console.log(x, y)
